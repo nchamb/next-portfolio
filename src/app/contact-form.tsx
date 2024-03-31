@@ -29,7 +29,7 @@ export function ContactForm() {
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50">
           <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
-            <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
+            <div className="w-full col-span-3 rounded-lg h-fit py-8 p-5 md:p-16 bg-gray-900">
               <Typography variant="h4" color="white" className="mb-2">
                 Contact Information
               </Typography>
@@ -109,27 +109,7 @@ export function ContactForm() {
                     className: "!min-w-full mb-8",
                   }}
                 />
-                <Typography
-                  variant="lead"
-                  className="!text-blue-gray-500 text-sm mb-2"
-                >
-                  What are you interested on?
-                </Typography>
-                <div className="-ml-3 mb-14 ">
-                  {/* @ts-ignore */}
-                  <Radio
-                    color="gray"
-                    name="type"
-                    label="Design"
-                    defaultChecked
-                  />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Development" />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Support" />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Other" />
-                </div>
+               
                 {/* @ts-ignore */}
                 <Textarea
                   color="gray"
