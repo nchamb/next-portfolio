@@ -142,7 +142,7 @@ export function ContactForm() {
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md">
+                  <Button onClick={()=>{alert("Under Development :( Try my cell or email")}} className="w-full md:w-fit" color="gray" size="md">
                     Send message
                   </Button>
                 </div>
