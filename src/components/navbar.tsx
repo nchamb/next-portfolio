@@ -107,7 +107,7 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="" target="_blank">
+          <a href="#contact" target="_self">
             <Button color="gray">Contact Me</Button>
           </a>
         </div>
@@ -135,7 +135,7 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <a href="" target="_blank">
+            <a href="#contact-me" target="_blank">
               <Button color="gray">Contact Me</Button>
             </a>
           </div>

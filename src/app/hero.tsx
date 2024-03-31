@@ -23,6 +23,54 @@ function Hero() {
             you&apos;ll get a glimpse of my journey in the world of web
             development, where creativity meets functionality.
           </Typography>
+          {/* Social media connnect buttons */}
+
+          <Typography
+            variant="h5"
+            className="mb-4 lg:text-2xl !leading-tight text-3xl"
+          >
+            Connect with me :)
+          </Typography>
+          <div className="mb-4 p-2 flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/nipun-bandara/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                width={24}
+                height={24}
+                alt="linkedin"
+                src="/image/linkedin2.svg"
+              />
+            </a>
+            <a
+              href="https://github.com/nipunbandara"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                width={24}
+                height={24}
+                alt="twitter"
+                src="/image/github.svg"
+              />
+            </a>
+            <a
+              href="https://instagram.com/niipunb"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                width={24}
+                height={24}
+                alt="github"
+                src="/image/insta.svg"
+              />
+            </a>
+          </div>
+          
+
           {/* <div className="grid">
             <Typography
               variant="small"

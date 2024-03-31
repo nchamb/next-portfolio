@@ -1,74 +1,52 @@
-"use client";
+import React from 'react';
 
-import { ProjectCard } from "@/components";
-import { Typography } from "@material-tailwind/react";
-
-const PROJECTS = [
+const projects = [
   {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    title: 'Project 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales metus a arcu dictum varius.',
+    imageUrl: '/image/titans.png',
+    destination: 'http://sentinels-user.vercel.app/',
   },
   {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    title: 'Project 2',
+    description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    imageUrl: '/image/titans-admin.png',
+    destination: 'http://ticketing-admin-dev.vercel.app/',
   },
   {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
-  },
-  {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
-  },
+    title: 'Project 3',
+    description: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec.',
+    imageUrl: '/image/zoo-melaka.png',
+    destination: 'https://zoo-melaka.vercel.app/',
+  }
+  // Add more projects as needed
 ];
 
-export function Projects() {
+const Projects = () => {
   return (
-    <section className="py-28 px-8">
-      <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
-          My Projects
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
-        </Typography>
-      </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
-        {PROJECTS.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
-        ))}
+    <section id="projects" className="py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-10">My Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href={project.destination} target="_blank" rel="noreferrer">
+              <div className="relative group">
+                <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover transition duration-300 transform group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <p className="text-gray-200">{project.description}</p>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Projects;

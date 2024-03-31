@@ -5,23 +5,31 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import Clients from "./clients";
 import Skills from "./skills";
-import Projects from "./projects";
+import Blogs from "./blogs";
 import Resume from "./resume";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import Experience from "./experience";
+import Education from "./education";
+import ResearchExperience from "./researchexperience";
+import Projects from "./projects";
 
 export default function Portfolio() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Clients />
+      {/* <Clients /> */}
       <Skills />
+      <Education />
+      <Experience />
+      {/* <ResearchExperience /> */}
       <Projects />
+      {/* <Blogs /> */}
       <Resume />
-      <Testimonial />
-      <PopularClients />
+      {/* <Testimonial /> */}
+      {/* <PopularClients /> */}
       <ContactForm />
       <Footer />
     </>

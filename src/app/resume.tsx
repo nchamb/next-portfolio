@@ -26,14 +26,14 @@ const RESUME_ITEMS = [
 
 export function Resume() {
   return (
-    <section className="px-8 py-24">
+    <section id="resume"className="px-8 py-24">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
           <Typography variant="h2" color="blue-gray">
             My Resume
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-            Highly skilled and creative Web Developer with 5+ years of
+            Highly skilled and creative Full-Stack Developer with 4+ years of
             experience in crafting visually stunning and functionally robust
             websites and web applications.
           </Typography>
@@ -41,6 +41,7 @@ export function Resume() {
             variant="text"
             color="gray"
             className="flex items-center gap-2"
+            onClick={() => window.open("/CV - Nipun Maha Mudiyanselage (Casual).pdf", "_blank")}
           >
             view more
             <ArrowRightIcon
