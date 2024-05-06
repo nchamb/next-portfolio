@@ -34,19 +34,19 @@ const SKILLS = [
     icon: HashtagIcon,
     title: "Web Optimization",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, using caching, lazy loading, optimizing database quaries, indexing and data structures and other techniques to reduce load times and performance bottlenecks.",
+      "Performance matters. I optimize websites and apps for speed, ensuring users enjoy a fast and responsive experience, using caching, lazy loading, optimizing database quaries, indexing and data structures and other techniques to reduce load times and performance bottlenecks.",
   },
   {
     icon: EyeIcon,
-    title: "Machine Learning and AI",
+    title: "AI",
     children:
-      "I am currently studying Machine Learning and AI, and I am excited to apply my knowledge to your projects. I can help you build intelligent applications that can learn and adapt to user behavior, automate tasks, and provide valuable insights.",
+      "I am currently studying Machine Learing and Deep Learning, and I am eager to apply my knowledge to real-world projects. I am familiar with Python, TensorFlow, Keras, and other ML libraries, and I am excited to explore the possibilities of AI in web development.",
   },
   {
     icon: DocumentTextIcon,
     title: "Testing and Quality Assurance",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "I rigorously test and debug applications to guarantee a bug-free and secure environment using Jest, Mocha, Chai, and other testing frameworks. I also conduct code reviews, write test cases, and ensure that the codebase is clean, maintainable, and scalable. I am also familiar with CI/CD pipelines and automated testing tools.",
   },
 ];
 
