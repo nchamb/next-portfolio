@@ -16,31 +16,31 @@ const SKILLS = [
     icon: RectangleGroupIcon,
     title: "Frontend Web Development:",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
+      "I have experiences in frontend styling but data manipulation using APIs and storing methods, quering react components using useQuery and GraphQL, state management using useState, Redux are my forte.",
   },
   {
     icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    title: "Backend/API Development",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      "I specialized in developing obust backend development, API design, database management, scalable architectures, implementing efficient data handling, and optimizing performance, while also demonstrating expertise in security protocols and seamless integration strategies",
   },
   {
     icon: SwatchIcon,
     title: "Technology Stack",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "I'm well-versed in the industry's most popular technologies, including MERN, .NET Core + SQL Server, Django + PostgreSQL, Serverless and Microservices Architecture. And, I'm always eager to learn new technologies and adapt to the latest trends.",
   },
   {
     icon: HashtagIcon,
-    title: " Web Optimization",
+    title: "Web Optimization",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, using caching, lazy loading, optimizing database quaries, indexing and data structures and other techniques to reduce load times and performance bottlenecks.",
   },
   {
     icon: EyeIcon,
-    title: "User-Centric Design",
+    title: "Machine Learning and AI",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "I am currently studying Machine Learning and AI, and I am excited to apply my knowledge to your projects. I can help you build intelligent applications that can learn and adapt to user behavior, automate tasks, and provide valuable insights.",
   },
   {
     icon: DocumentTextIcon,
