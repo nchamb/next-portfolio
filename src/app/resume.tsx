@@ -43,7 +43,7 @@ export function Resume() {
             className="flex items-center gap-2"
             onClick={() => window.open("/CV - Nipun Maha Mudiyanselage (SE).pdf", "_blank")}
           >
-            view more
+            view my resume
             <ArrowRightIcon
               strokeWidth={3}
               className="h-3.5 w-3.5 text-gray-900"
