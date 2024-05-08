@@ -33,8 +33,8 @@ export function Resume() {
             My Resume
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-            Highly skilled and creative Full-Stack Developer with 4+ years of
-            experience in crafting visually stunning and functionally robust
+            Highly skilled and creative Full-Stack Developer with over 4 years of
+            experience in software development, crafting visually stunning and functionally robust
             websites and web applications.
           </Typography>
           <Button
