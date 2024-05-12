@@ -270,6 +270,7 @@ const Experience = () => {
     // Effect hook to listen for window resize events
     useEffect(() => {
       window.addEventListener('resize', handleResize);
+      setIsSmallScreen(window.innerWidth < 900);
       // Cleanup function to remove event listener when component unmounts
       return () => {
         window.removeEventListener('resize', handleResize);
