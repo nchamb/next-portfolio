@@ -47,7 +47,7 @@ const ProjectsSectionLarge = () => {
         </div>
         <div>
         <time className=" translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-26 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Feb, 2019 - Dec, 2023</time>
-        <TimelineItem className="float-right pr-3 mr-80">
+        <TimelineItem className="float-right pr-3 mr-36">
           {/* <TimelineConnector className="pl-0.4 ml-24" /> */}
           <TimelineHeader className="h-3">
             <TimelineIcon className=""/>
@@ -59,11 +59,11 @@ const ProjectsSectionLarge = () => {
             <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
             <Typography variant="small" color="gary" className="font-normal text-gray-600">
-              Installed and configured generator control modules and ECUs, ensuring seamless integration <br/>with existing systems.<br/>
-              Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and <br/>CAT and Perkins ECUs.<br/>
+              Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
+              Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
-              Performed routine maintenance and troubleshooting for hardware and software, enhancing system <br/>performance and reliability.<br/>
-              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing <br/>user concerns related to controller modules and other technical issues.<br/>
+              Performed maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to <br/>controller modules and other technical issues.<br/>
               Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
             </Typography>
           </TimelineBody>
@@ -102,7 +102,7 @@ const ProjectsSectionSmall = () => {
               Installed and configured generator control modules and ECUs, ensuring seamless integration <br/>with existing systems.<br/>
               Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and <br/>CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
-              Performed routine maintenance and troubleshooting for hardware and software, enhancing system <br/>performance and reliability.<br/>
+              Performed maintenance and troubleshooting for hardware and software, enhancing system <br/>performance and reliability.<br/>
               Delivered exceptional end-user support, facilitating training sessions and efficiently addressing <br/>user concerns related to controller modules and other technical issues.<br/>
               Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
            </p>
