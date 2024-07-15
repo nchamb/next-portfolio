@@ -52,7 +52,7 @@ const ProjectsSectionLarge = () => {
           <TimelineHeader className="h-3">
             <TimelineIcon className=""/>
             <Typography variant="h6" color="blue-gray" className="leading-none">
-              IT Support Technician - Part-time
+              IT Technician - Part-time
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
