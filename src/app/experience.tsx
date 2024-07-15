@@ -52,19 +52,21 @@ const ProjectsSectionLarge = () => {
           <TimelineHeader className="h-3">
             <TimelineIcon className=""/>
             <Typography variant="h6" color="blue-gray" className="leading-none">
-              Administrative Clerk - Part-time
+              IT Support Technician - Part-time
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
             <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
             <Typography variant="small" color="gary" className="font-normal text-gray-600">
-              Wrote and sent contracts, finalizing paperwork on behalf of staff.<br/>
-              Proofread and edited correspondence, reports and files.<br/>
-              Kept office file system highly organized and quickly retrieved needed records.<br/>
-              Maintained accurate accounting records, inputting new invoices, and payments into Database.<br/>
-              Answered email and mail correspondence on behalf of personnel.<br/>
-              Tracked inventory orders and usage to maintain accurate records.
+              Tracked inventory orders and usage to maintain accurate records.<br/>
+              Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
+              Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
+              Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
+              Performed routine maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to controller modules and other technical issues.<br/>
+              Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
+
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -214,12 +216,7 @@ const Experience = () => {
     //         <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
     //         <Typography variant="small" color="gary" className="font-normal text-gray-600">
-    //           Wrote and sent contracts, finalizing paperwork on behalf of staff.<br/>
-    //           Proofread and edited correspondence, reports and files.<br/>
-    //           Kept office file system highly organized and quickly retrieved needed records.<br/>
-    //           Maintained accurate accounting records, inputting new invoices, and payments into Database.<br/>
-    //           Answered email and mail correspondence on behalf of personnel.<br/>
-    //           Tracked inventory orders and usage to maintain accurate records.
+    //     
     //         </Typography>
     //       </TimelineBody>
     //     </TimelineItem>
