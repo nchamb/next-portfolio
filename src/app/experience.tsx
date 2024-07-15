@@ -59,14 +59,12 @@ const ProjectsSectionLarge = () => {
             <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
             <Typography variant="small" color="gary" className="font-normal text-gray-600">
-              Tracked inventory orders and usage to maintain accurate records.<br/>
               Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
               Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
               Performed routine maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
-              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to controller modules and other technical issues.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to <br/>controller modules and other technical issues.<br/>
               Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
-
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -97,16 +95,16 @@ const ProjectsSectionSmall = () => {
            </p>
          </div>
          <div className="bg-white shadow-md rounded-md p-6 mb-4">
-           <h2 className="text-xl font-semibold mb-2">Administrative Clerk - Part-time</h2>
+           <h2 className="text-xl font-semibold mb-2">IT Technician - Part-time</h2>
            <p className="text-gray-600">Sunil Electricals</p>
            <p className="text-gray-600">Feb, 2019 - Dec, 2023</p>
            <p className="text-gray-700 mt-2">
-              Wrote and sent contracts, finalizing paperwork on behalf of staff.<br/>
-              Proofread and edited correspondence, reports and files.<br/>
-              Kept office file system highly organized and quickly retrieved needed records.<br/>
-              Maintained accurate accounting records, inputting new invoices, and payments into Database.<br/>
-              Answered email and mail correspondence on behalf of personnel.<br/>
-              Tracked inventory orders and usage to maintain accurate records.
+              Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
+              Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
+              Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
+              Performed routine maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to <br/>controller modules and other technical issues.<br/>
+              Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
            </p>
          </div>
         </div>
