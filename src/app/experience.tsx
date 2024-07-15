@@ -25,7 +25,7 @@ const ProjectsSectionLarge = () => {
           <TimelineHeader className="h-3">
             <TimelineIcon className=""/>
             <Typography variant="h6" color="blue-gray" className="leading-none">
-              Software Engineer - Self-employed
+              Junior Full-stack Developer
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
@@ -62,8 +62,8 @@ const ProjectsSectionLarge = () => {
               Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
               Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
-              Performed routine maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
-              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to <br/>controller modules and other technical issues.<br/>
+              Performed maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns  <br/>related to controller modules and other technical issues.<br/>
               Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
             </Typography>
           </TimelineBody>
@@ -80,7 +80,7 @@ const ProjectsSectionSmall = () => {
     <div className="container mx-auto p-4">
        <h1 className="text-2xl font-semibold mb-4">My Experience</h1>
          <div className="bg-white shadow-md rounded-md p-6 mb-4">
-           <h2 className="text-xl font-semibold mb-2"> Software Engineer - Self-employed</h2>
+           <h2 className="text-xl font-semibold mb-2"> Junior Full-stack Developer</h2>
            <p className="text-gray-600">CorsDeck Pvt Ltd</p>
            <p className="text-gray-600">Apr, 2023 - Jan, 2024</p>
            <p className="text-gray-700 mt-2">
@@ -103,7 +103,7 @@ const ProjectsSectionSmall = () => {
               Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
               Performed routine maintenance and troubleshooting for hardware and software, enhancing system performance and reliability.<br/>
-              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to <br/>controller modules and other technical issues.<br/>
+              Delivered exceptional end-user support, facilitating training sessions and efficiently addressing user concerns related to controller modules and other technical issues.<br/>
               Handled administrative tasks, including drafting contracts and preparing invoices for the services provided.
            </p>
          </div>
