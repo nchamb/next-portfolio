@@ -23,7 +23,7 @@ const projects = [
     title: 'Avanoa',
     description: 'Avanoa is multifunctional application mainly focused for communication purposes for motor disability persons to operate application functionalities with their eye movements.',
     imageUrl: '/image/avanoa.jpeg',
-    destination: 'https://avanoa.vercel.app/',
+    destination: 'https://avanoa-frontend.vercel.app/',
   }
   // Add more projects as needed
 ];

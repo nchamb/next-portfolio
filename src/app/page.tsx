@@ -24,7 +24,7 @@ export default function Portfolio() {
       <Skills />
       <Education />
       <Experience />
-      {/* <ResearchExperience /> */}
+      <ResearchExperience />
       <Projects />
       {/* <Blogs /> */}
       <Resume />

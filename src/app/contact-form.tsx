@@ -11,8 +11,44 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import emailjs from '@emailjs/browser';
+
+// Send me an Email upon clicking the button using EmailJS
+function sendEmail(formElement: HTMLFormElement) { 
+  const serviceID = "service_wbnj7a7";
+  const templateID = "template_gqevnph";
+  const userID = "c0MeHWSXWbEQ3vA8Z";
+
+  // Send the email using EmailJS
+  emailjs.sendForm(serviceID, templateID, formElement, userID)
+    .then((response: any) => {
+      console.log("Email sent successfully!", response.status, response.text);
+      alert("Email sent successfully! I will get back to you as soon as possible.");
+      // Reset the form after successful submission
+      formElement.reset();
+    }
+    ).catch((error: any) => {
+      console.error("Failed to send email:", error);
+      alert("Failed to send email. Please try again later.");
+    }
+  );
+
+}
+
 
 export function ContactForm() {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formElement = event.currentTarget as HTMLFormElement;
+    const formData = new FormData(formElement);
+    // Log the form data to see if it's correct
+    console.log("Form data:", Object.fromEntries(formData.entries()));
+    console.log("Form submitted");
+    // variables to hold form data
+    
+    sendEmail(formElement);
+
+  };
   return (
     <section id="contact"className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
@@ -70,7 +106,7 @@ export function ContactForm() {
               </div>
             </div>
             <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
-              <form action="#">
+              <form action="#" onSubmit={handleSubmit}>
                 <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
                   <Input
@@ -78,8 +114,9 @@ export function ContactForm() {
                     size="lg"
                     variant="static"
                     label="First Name"
-                    name="first-name"
+                    name="first_name"
                     placeholder="eg. Lucas"
+                    required
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
                     }}
@@ -90,8 +127,9 @@ export function ContactForm() {
                     size="lg"
                     variant="static"
                     label="Last Name"
-                    name="last-name"
+                    name="last_name"
                     placeholder="eg. Jones"
+                    required
                     containerProps={{
                       className: "!min-w-full",
                     }}
@@ -103,8 +141,10 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Email"
-                  name="first-name"
+                  name="email"
+                  type="email"
                   placeholder="eg. lucas@mail.com"
+                  required
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
@@ -116,13 +156,14 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Your Message"
-                  name="first-name"
+                  name="message"
+                  required
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button onClick={()=>{alert("Under Development :( Try my cell or email")}} className="w-full md:w-fit" color="gray" size="md">
+                  <Button type="submit" className="w-full md:w-fit" color="gray" size="md">
                     Send message
                   </Button>
                 </div>

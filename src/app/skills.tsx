@@ -40,7 +40,7 @@ const SKILLS = [
     icon: EyeIcon,
     title: "AI",
     children:
-      "I am currently studying Machine Learing and Deep Learning, and I am eager to apply my knowledge to real-world projects. I am familiar with Python, TensorFlow, Keras, and other ML libraries, and I am excited to explore the possibilities of AI in web development.",
+     "I have learned machine learning algorithms, including supervised and unsupervised models, and I am currently studying deep learning, neural networks, computer vision, and audio processing. I am proficient in Python and familiar with libraries such as TensorFlow, Keras, and scikit-learn. I am eager to apply this knowledge to real-world projects."
   },
   {
     icon: DocumentTextIcon,

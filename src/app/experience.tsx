@@ -17,9 +17,9 @@ const ProjectsSectionLarge = () => {
 <div id = "experience" className="container mx-auto p-4">
       <h1 className="text-2xl font-semibold mb-4">My Experience</h1>
       <Timeline className="">
-      <div className="">
+      {/* <div className="">
       <time className=" translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-26 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Apr, 2023 - Jan, 2024</time>
-       
+
         <TimelineItem className="float-right pr-48">
           <TimelineConnector className="" />
           <TimelineHeader className="h-3">
@@ -43,8 +43,8 @@ const ProjectsSectionLarge = () => {
             </Typography>
           </TimelineBody>
         </TimelineItem>
+        </div> */}
 
-        </div>
         <div>
         <time className=" translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-26 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Feb, 2019 - Dec, 2023</time>
         <TimelineItem className="float-right pr-3 mr-36">
@@ -79,7 +79,7 @@ const ProjectsSectionSmall = () => {
   return (
     <div className="container mx-auto p-4">
        <h1 className="text-2xl font-semibold mb-4">My Experience</h1>
-         <div className="bg-white shadow-md rounded-md p-6 mb-4">
+         {/* <div className="bg-white shadow-md rounded-md p-6 mb-4">
            <h2 className="text-xl font-semibold mb-2"> Junior Full-stack Developer</h2>
            <p className="text-gray-600">CorsDeck Pvt Ltd</p>
            <p className="text-gray-600">Apr, 2023 - Jan, 2024</p>
@@ -93,7 +93,7 @@ const ProjectsSectionSmall = () => {
               Deployed application using CI/CD tools with Docker, Kubernetes, AWS and GCP pipelines.<br/>
               Resolved production issues and implemented unit testing using JUnit and Jest.
            </p>
-         </div>
+         </div> */}
          <div className="bg-white shadow-md rounded-md p-6 mb-4">
            <h2 className="text-xl font-semibold mb-2">IT Technician - Part-time</h2>
            <p className="text-gray-600">Sunil Electricals</p>
