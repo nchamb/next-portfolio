@@ -1,6 +1,5 @@
 // components
 import { Navbar, Footer } from "@/components";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // sections
 import Hero from "./hero";
@@ -33,7 +32,6 @@ export default function Portfolio() {
       {/* <PopularClients /> */}
       <ContactForm />
       <Footer />
-      <SpeedInsights/>
     </>
   );
 }
