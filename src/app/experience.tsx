@@ -45,7 +45,7 @@ const ProjectsSectionLarge = () => {
         </TimelineItem>
         </div> */}
 
-        <div>
+        <div className="bg-white shadow-md rounded-md p-6 mb-4">
         <time className=" translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-26 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Feb, 2019 - Dec, 2023</time>
         <TimelineItem className="float-right pr-3 mr-36">
           {/* <TimelineConnector className="pl-0.4 ml-24" /> */}
