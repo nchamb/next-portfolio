@@ -1,5 +1,6 @@
 // components
 import { Navbar, Footer } from "@/components";
+import { getAllPosts } from '@/lib/blog';
 
 // sections
 import Hero from "./hero";
@@ -15,6 +16,8 @@ import Education from "./education";
 import ResearchExperience from "./researchexperience";
 import Projects from "./projects";
 
+const blogPosts = getAllPosts();
+
 export default function Portfolio() {
   return (
     <>
@@ -26,7 +29,7 @@ export default function Portfolio() {
       <Experience />
       <ResearchExperience />
       <Projects />
-      {/* <Blogs /> */}
+      <Blogs blogs={blogPosts} />
       <Resume />
       {/* <Testimonial /> */}
       {/* <PopularClients /> */}

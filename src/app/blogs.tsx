@@ -1,52 +1,41 @@
 "use client";
-
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
+import { useRouter } from "next/navigation";
 
-const BLOGS = [
-  {
-    img: "/image/blog-1.svg",
-    title: "Introduction to React Hooks",
-    desc: "Learn about the basics of React Hooks and how they can improve your component logic.",
-  },
-  {
-    img: "/image/blog2.svg",
-    title: "CSS Grid Layout",
-    desc: "Discover the power of CSS Grid Layout and how it can simplify your web page layouts.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Getting Started with TypeScript",
-    desc: "Get started with TypeScript and learn how it can enhance your JavaScript projects.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "Responsive Web Design",
-    desc: "Learn the principles of responsive web design and create websites that adapt to different screen sizes.",
-  },
-  {
-    img: "/image/blog-1.svg",
-    title: "Introduction to React Hooks",
-    desc: "Learn about the basics of React Hooks and how they can improve your component logic.",
-  },
-  {
-    img: "/image/blog2.svg",
-    title: "CSS Grid Layout",
-    desc: "Discover the power of CSS Grid Layout and how it can simplify your web page layouts.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Getting Started with TypeScript",
-    desc: "Get started with TypeScript and learn how it can enhance your JavaScript projects.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "Responsive Web Design",
-    desc: "Learn the principles of responsive web design and create websites that adapt to different screen sizes.",
-  },
-];
+// Define the type for a single blog post
+type BlogPost = {
+  slug: string;
+  img: string;
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  tags: string[];
+  featured?: boolean;
+  author: {
+    name: string;
+    avatar: string;
+    bio: string;
+  };
+};
 
-export function Blogs() {
+// Define the props type for Blogs
+type BlogsProps = {
+  blogs: BlogPost[];
+};
+const Blogs: React.FC<BlogsProps> = ({ blogs }) =>  {
+  const router = useRouter();
+
+
+  if (!blogs || blogs.length === 0) {
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+            <h1 className="text-2xl font-bold text-slate-900">No blog posts available</h1>
+        </div>
+    );
+}
   return (
     <section id="blog"className="py-28 px-8">
       <div className="container mx-auto mb-20 text-center">
@@ -60,10 +49,22 @@ export function Blogs() {
           Explore my collection of blog posts on various topics related to web development and programming.
         </Typography>
       </div>
+      {/* Blog Posts Grid */}
+
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
-        {BLOGS.map((props, idx) => (
+        {blogs.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
+      </div>
+
+      <div className="text-center mt-12">
+        <button
+          onClick={() => router.push("/blogs")}
+          type="button"
+          className="bg-black text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-gray-900"
+        >
+          Load More Posts
+        </button>
       </div>
     </section>
   );
