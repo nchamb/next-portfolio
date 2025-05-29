@@ -123,20 +123,20 @@ export default function BlogPostPage({ params }: Props) {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h3 className="text-xl font-semibold mb-6">Related Articles</h3>
           <div className="grid md:grid-cols-2 gap-6">
-            <Link href="/blog/2" className="group">
+            <Link href="/blogs" className="group">
               <div className="h-32 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-4"></div>
               <h4 className="font-medium group-hover:text-blue-600 transition-colors">
-                Mastering CSS Grid and Flexbox for Modern Layouts
+                Example related article
               </h4>
               <p className="text-sm text-slate-600 mt-2">6 min read</p>
             </Link>
-            <Link href="/blog/3" className="group">
+            {/* <Link href="/blog/3" className="group">
               <div className="h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mb-4"></div>
               <h4 className="font-medium group-hover:text-blue-600 transition-colors">
                 Optimizing Web Performance with Modern Tools
               </h4>
               <p className="text-sm text-slate-600 mt-2">10 min read</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </article>

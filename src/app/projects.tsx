@@ -5,37 +5,37 @@ const projects = [
   {
     title: 'Titans User',
     description: 'Ticketing System for Titans Organization to sell tickets for their events. Users can purchase tickets and get QR Code for Entry and Exit of the Event.',
-    imageUrl: '/image/titans.png',
+    imageUrl: '/image/projects/titans.png',
     // destination: 'http://sentinels-user.vercel.app/',
   },
   {
     title: 'Titans Admin',
     description: 'Ticketing Admin System for Titans Organization to manage their tickets purchases with QR Code Scanning Feature for Entry and Exit of the Event.',
-    imageUrl: '/image/titans-admin.png',
+    imageUrl: '/image/projects/titans-admin.png',
     // destination: 'http://ticketing-admin-dev.vercel.app/',
   },
   {
     title: 'Zoo Melaka',
     description: 'Zoo Management System for Zoo Melaka Organization',
-    imageUrl: '/image/zoo-melaka.png',
+    imageUrl: '/image/projects/zoo-melaka.png',
     destination: 'https://zoo-melaka.vercel.app/',
   },
   {
     title: 'Avanoa',
     description: 'Avanoa is multifunctional application mainly focused for communication purposes for motor disability persons to operate application functionalities with their eye movements.',
-    imageUrl: '/image/avanoa.jpeg',
+    imageUrl: '/image/projects/avanoa.jpeg',
     destination: 'https://avanoa-frontend.vercel.app/',
   },
   {
     title: 'Global Adventures',
     description: 'Global Adventures is a travel agency website that provides information about various travel packages, destinations, and services offered by the agency.',
-    imageUrl: '/image/global-adventure.png',
+    imageUrl: '/image/projects/global-adventure.png',
     destination: 'https://nipunbandara.github.io/Global-Adventures/',
   },
   {
     title: 'Garden Indian Restaurant',
     description: 'Garden Indian Restaurant is a restaurant website that provides information about the restaurant, its menu, and services offered. Users can view the menu, make reservations, and place orders online. Additonally, users can see privious orders and refill same order with one click.',
-    imageUrl: '/image/garden-indian-restourant.png',
+    imageUrl: '/image/projects/garden-indian-restourant.png',
     destination: 'https://nipunbandara.github.io/Garden-Indian-Restaurant/',
   }
 ];
