@@ -2,6 +2,8 @@ import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import Link from 'next/link';
 import BlogNavbar from "@/components/blog-navbar";
 import { getAllPosts } from '@/lib/blog';
+import Image from "next/image";
+
 
 const blogs = () => {
     
@@ -73,7 +75,14 @@ const blogs = () => {
                             Featured
                         </div>
                     )}
-                    <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600"></div>
+                    <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600"> <Image
+                        src={post.img}
+                        alt={post.title}
+                        width={768}
+                        height={768}
+                        className="h-full w-full object-cover"
+                         />
+                    </div>
                     <div className="p-6">
                         <div className="flex items-center text-sm text-slate-500 mb-3">
                         <Calendar className="w-4 h-4 mr-1" />
