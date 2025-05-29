@@ -96,7 +96,7 @@ export default function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Article Content */}
-        <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-4 mb-8">
           <div 
             className="prose prose-lg max-w-none prose-headings:text-slate-900 prose-p:text-slate-700 prose-pre:bg-slate-100 prose-pre:text-slate-900"
             dangerouslySetInnerHTML={{ __html: post.content }}

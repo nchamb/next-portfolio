@@ -50,7 +50,7 @@ export function ContactForm() {
 
   };
   return (
-    <section id="contact"className="px-8 py-16">
+    <section id="contact"className="px-4 py-16">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h1" color="blue-gray" className="mb-4">
           Contact Me
@@ -64,7 +64,7 @@ export function ContactForm() {
       </div>
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50">
-          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
+          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10 sm:px-6 px-4">
             <div className="w-full col-span-3 rounded-lg h-fit py-8 p-5 md:p-16 bg-gray-900">
               <Typography variant="h4" color="white" className="mb-2">
                 Contact Information
