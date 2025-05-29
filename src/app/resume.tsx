@@ -41,7 +41,7 @@ export function Resume() {
             variant="text"
             color="gray"
             className="flex items-center gap-2"
-            onClick={() => window.open("/CV - Nipun Maha Mudiyanselage IT Specialist.pdf", "_blank")}
+            onClick={() => window.open("/CV - Nipun Maha Mudiyanselage (SE).pdf", "_blank")}
           >
             view my resume
             <ArrowRightIcon
