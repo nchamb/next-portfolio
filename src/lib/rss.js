@@ -2,7 +2,7 @@ const RSS = require('rss');
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
-const postsDirectory = path.join(process.cwd(), 'src/content/blogs');
+const postsDirectory = path.join(process.cwd(), 'content/blogs');
 
 function getAllPosts() {
   const fileNames = fs.readdirSync(postsDirectory);
