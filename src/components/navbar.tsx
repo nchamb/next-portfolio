@@ -60,9 +60,9 @@ const NAV_MENU = [
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
-
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href, onClick }: NavItemProps) {
   return (
     <li>
       <Typography
@@ -72,6 +72,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
+        onClick={onClick as any}
       >
         {children}
       </Typography>
@@ -128,15 +129,15 @@ export function Navbar() {
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
-              <NavItem key={name} href={href}>
+              <NavItem key={name} href={href} onClick={handleOpen}>
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <a href="#contact-me" target="_blank">
-              <Button color="gray">Contact Me</Button>
+            <a href="#contact" target="_self">
+              <Button color="gray" onClick={handleOpen}>Contact Me</Button>
             </a>
           </div>
         </div>
