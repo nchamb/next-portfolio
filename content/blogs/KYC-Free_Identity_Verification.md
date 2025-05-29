@@ -32,6 +32,7 @@ author: {name: "Nipun Bandara", avatar: "", bio: "Tech enthusiast building futur
 </ul>
 
 <h2>Project Structure</h2>
+<div style="max-width: 100%; overflow-x: auto; background: #f6f8fa; border-radius: 6px; padding: 1em; margin-bottom: 1em;">
 <pre><code>project/
 ├── backend/            # FastAPI for verification
 │   ├── main.py
@@ -43,6 +44,7 @@ author: {name: "Nipun Bandara", avatar: "", bio: "Tech enthusiast building futur
 ├── contracts/
 │   └── HumanProofSBT.sol
 </code></pre>
+</div>
 
 <h2>Smart Contract</h2>
 <p>The <code>HumanProofSBT</code> contract issues a Soulbound Token (SBT) if verification passes. It prevents duplicate claims and stores user status immutably.</p>
@@ -53,10 +55,15 @@ author: {name: "Nipun Bandara", avatar: "", bio: "Tech enthusiast building futur
   <li><strong>dlib:</strong> for detecting facial movements</li>
   <li><strong>Google Cloud Speech-to-Text:</strong> for validating spoken phrase</li>
 </ul>
-<p>Errors like “<em>Unable to open shape_predictor_68_face_landmarks.dat</em>” indicate missing model files. Make sure the `.dat` file is present and correctly loaded.</p>
+<p>
+  Errors like <em style="word-break: break-all;">>“Unable to open shape_predictor_68_face_landmarks.dat”</em> indicate missing model files.
+  Ensure the <code>.dat</code> file is present in your project and correctly referenced in your code.
+  On mobile or small screens, check your file paths and permissions if you encounter this error.
+</p>
 
 <h2>Handling CORS & API Errors</h2>
 <p>For your React app to communicate with FastAPI, set proper CORS headers:</p>
+<div style="max-width: 100%; overflow-x: auto; background: #f6f8fa; border-radius: 6px; padding: 1em; margin-bottom: 1em;">
 <pre><code>from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
   CORSMiddleware,
@@ -65,6 +72,7 @@ app.add_middleware(
   allow_headers=["*"],
 )
 </code></pre>
+</div>
 
 <h2>Final Touch: MetaMask + UI</h2>
 <p>Once verified, the user can connect their wallet and claim a proof NFT. If already verified, show a badge and skip re-verification.</p>

@@ -56,7 +56,7 @@ export default function BlogPostPage({ params }: Props) {
           
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full"></div>
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex-shrink-0"></div>
               <div>
                 <p className="font-medium text-slate-900">{post.author.name}</p>
                 <p className="text-sm text-slate-600">{post.author.bio}</p>
@@ -118,6 +118,7 @@ export default function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </div>
+        
 
         {/* Related Posts */}
         <div className="bg-white rounded-lg shadow-sm p-6">
