@@ -65,7 +65,7 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
           ))}
           </div>
           
-          <Link href={`/blog/${slug}`}
+          <Link href={`/blogs/${slug}`}
           className="inline-flex items-center text-gray-600 hover:text-black font-medium group"
           >
           Read more
