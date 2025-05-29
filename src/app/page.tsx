@@ -34,7 +34,7 @@ export default function Portfolio() {
       {/* <Testimonial /> */}
       {/* <PopularClients /> */}
       <ContactForm />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
