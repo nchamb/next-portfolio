@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block Next.js internal files and API routes (optional, for security/cleanliness)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /server/
+Disallow: /private/
+
+Sitemap: https://nipunbandara.vercel.app/sitemap.xml
