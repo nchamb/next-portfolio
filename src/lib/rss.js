@@ -30,7 +30,7 @@ function generateRssFeed() {
   posts.forEach(post => {
     feed.item({
       title: post.title,
-      guid: post.slug,
+      guid: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
       url: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
       date: post.date,
       description: post.excerpt,

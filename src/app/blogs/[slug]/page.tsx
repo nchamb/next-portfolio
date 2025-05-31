@@ -16,6 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.slug, // or another appropriate property
     description: post.content, // or another appropriate property
+    alternates: {
+      canonical: `https://nipunbandara.vercel.app/blogs/${params.slug}`,
+    },
   };
 }
 

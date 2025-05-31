@@ -5,6 +5,12 @@ import { getAllPosts } from '@/lib/blog';
 import Image from "next/image";
 
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://nipunbandara.vercel.app/blogs',
+  },
+};
+
 const blogs = () => {
     
 

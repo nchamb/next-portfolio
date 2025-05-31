@@ -51,6 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
       </head>
       <body className={roboto.className}>
       <PostHogProvider>
