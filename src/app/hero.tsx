@@ -57,7 +57,7 @@ function Hero() {
               />
             </a>
             <a
-              href="https://instagram.com/niipunb"
+              href="https://instagram.com/n.bannd"
               target="_blank"
               rel="noreferrer"
             >
