@@ -5,8 +5,9 @@
   "author": "Nipun M M",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run generate-rss",
+    "build": "next build && npm run generate-rss && npm run generate-sitemap",
     "generate-rss": "node scripts/generate-rss.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
     "start": "next start",
     "lint": "next lint"
   },
