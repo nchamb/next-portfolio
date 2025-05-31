@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, Share2, Heart, Bookmark } from "lucide-react";
 import BlogNavbar from '@/components/blog-navbar';
+import { Footer } from '@/components';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getPostBySlug } from '@/lib/blog';
@@ -146,11 +147,8 @@ export default function BlogPostPage({ params }: Props) {
       </article>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8 mt-16">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-400">&copy; 2024 DevBlog. Built with React, TypeScript, and Tailwind CSS.</p>
-        </div>
-      </footer>
+      <Footer />
+      
     </div>
   );
 };

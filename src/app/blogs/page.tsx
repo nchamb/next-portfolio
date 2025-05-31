@@ -1,6 +1,7 @@
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import Link from 'next/link';
 import BlogNavbar from "@/components/blog-navbar";
+import { Footer } from "@/components";
 import { getAllPosts } from '@/lib/blog';
 import Image from "next/image";
 
@@ -134,6 +135,9 @@ const blogs = () => {
             </div>
         </div>
 
+        {/* Footer */}
+        <Footer />
+        
         </div>
     );
 };
