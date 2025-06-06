@@ -18,7 +18,7 @@ const projects = [
     title: 'Zoo Melaka',
     description: 'Zoo Management System for Zoo Melaka Organization',
     imageUrl: '/image/projects/zoo-melaka.png',
-    destination: 'https://zoo-melaka.vercel.app/',
+    // destination: 'https://zoo-melaka.vercel.app/',
   },
   {
     title: 'Avanoa',
