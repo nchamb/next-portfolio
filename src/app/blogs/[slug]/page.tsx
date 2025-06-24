@@ -5,6 +5,7 @@ import { Footer } from '@/components';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getPostBySlug } from '@/lib/blog';
+import DisqusComments from '@/components/disqus-comment';
 
 type Props = {
   params: { slug: string };
@@ -144,8 +145,9 @@ export default function BlogPostPage({ params }: Props) {
             </Link> */}
           </div>
         </div>
+        <DisqusComments post={post} />
       </article>
-
+     
       {/* Footer */}
       <Footer />
       
