@@ -2,7 +2,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import { Layout } from "@/components";
 import { PostHogProvider } from './providers';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -57,7 +57,6 @@ export default function RootLayout({
       <PostHogProvider>
         <Layout>
           {children}
-          <FixedPlugin />
           <SpeedInsights/>
         </Layout>
       </PostHogProvider>

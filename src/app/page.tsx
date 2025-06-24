@@ -1,5 +1,5 @@
 // components
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer, FixedPlugin } from "@/components";
 import { getAllPosts } from '@/lib/blog';
 
 // sections
@@ -35,6 +35,7 @@ export default function Portfolio() {
       {/* <PopularClients /> */}
       <ContactForm />
       <Footer />
+      <FixedPlugin />
     </>
   );
 }
