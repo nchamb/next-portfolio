@@ -39,7 +39,7 @@ export function OpenContribution() {
     const fetchIssues = async () => {
       try {
         const octokit = new Octokit({
-          auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
+          auth: process.env.githubToken,
         });
 
         const results = await Promise.all(
@@ -100,7 +100,7 @@ export function OpenContribution() {
   };
 
   return (
-    <section id="testimonial" className="py-28 px-8 bg-gradient-to-br from-slate-50 to-slate-100">
+    <section id="open-contribution" className="py-28 px-8 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
           My Open Source Issues & Pull Requests

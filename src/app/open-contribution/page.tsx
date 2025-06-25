@@ -143,7 +143,7 @@ export default function OpenContribution() {
         <div className="container mx-auto space-y-10">
           {responses.length === 0 ? (
             <Typography as="p" className="text-gray-500 text-center text-lg">
-              No data available. Please visit the testimonial section first.
+              No data available. Please visit the Portfolio Open Contribution section first.
             </Typography>
           ) : (
             responses.map((response, idx) => (

@@ -58,7 +58,7 @@ const NAV_MENU = [
   {
     name: "Open Contribution",
     icon: Square3Stack3DIcon, // Changed to Square3Stack3DIcon for Open Contribution
-    href: "/open-contribution",
+    href: "/#open-contribution",
   },
 ];
 
