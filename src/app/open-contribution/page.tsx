@@ -25,13 +25,13 @@ type Issue = {
   pull_request?: any;
 };
 
-const COLORS = ["#3b82f6", "#a21caf"];
+const COLORS = ["#a21caf", "#3b82f6"];
 
 const getTypeChip = (issue: Issue) =>
   issue.pull_request ? (
     <Chip
       value="Pull Request"
-      color="purple"
+      color="blue"
       size="sm"
       className="ml-2"
       variant="gradient"
@@ -39,7 +39,7 @@ const getTypeChip = (issue: Issue) =>
   ) : (
     <Chip
       value="Issue"
-      color="blue"
+      color="purple"
       size="sm"
       className="ml-2"
       variant="gradient"
