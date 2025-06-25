@@ -63,7 +63,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-         <div className="flex justify-center mt-8">
+         <div className="flex justify-center mt-16">
             <a
               href="https://github.com/nipunbandara"
               target="_blank"

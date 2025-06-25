@@ -23,7 +23,7 @@ const NAV_MENU = [
   {
     name: "Home",
     icon: RectangleStackIcon,
-    href: "/#",
+    href: "/",
   },
   {
     name: "About Me",
