@@ -7,6 +7,7 @@ const BASE_URL = 'https://nipunbandara.vercel.app';
 const staticPages = [
   { path: '', priority: 1.0 },      // homepage
   { path: 'blogs', priority: 0.8 }, // blog listing page
+  { path: 'open-contribution', priority: 0.8 }, // open contributions page
 ];
 
 // If your blog posts are markdown files in /content/blogs, read their slugs and lastmod:
