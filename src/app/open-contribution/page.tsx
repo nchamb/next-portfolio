@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography, Card, CardBody, Chip } from "@material-tailwind/react";
 import { Footer, Navbar } from "@/components";
-import { useRouter } from "next/navigation";
 import {
   PieChart,
   Pie,
@@ -12,7 +11,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 
 type Repo = { owner: string; repo: string };
 type Issue = {
@@ -57,7 +56,7 @@ const getStateChip = (state: string) => (
   />
 );
 export default function OpenContribution() {
-  const router = useRouter();
+
   const [repos, setRepos] = useState<Repo[]>([]);
   const [responses, setResponses] = useState<{ data: Issue[] }[]>([]);
 
@@ -92,32 +91,42 @@ export default function OpenContribution() {
       <Navbar />
       <section className="py-28 px-8 bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="container mx-auto mb-20 text-center">
-        <button
-            onClick={() => router.back()}
-            className="flex items-center text-black-500 hover:text-blue-700 mb-8 group">
-                       
-
+          <a href="/#open-contribution" target="_self">
+          <button
+            className="flex items-center text-black-500 hover:text-blue-700 mb-8 group"
+          >
             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-
             Back
-        </button>
-        <Typography variant="h2" color="blue-gray" className="mb-4">
-        All Issues & Pull Requests
-        </Typography>
-        <Typography
-        variant="lead"
-        className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
-        Detailed list of issues and pull requests created in open source repositories.
-        </Typography>
+          </button>
+          </a>
+          <Typography variant="h2" color="blue-gray" className="mb-4">
+            All Issues & Pull Requests
+          </Typography>
+          <Typography
+            variant="lead"
+            className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
+          >
+            Detailed list of issues and pull requests created in open source repositories.
+          </Typography>
         </div>
         {/* Pie Charts Section */}
         <div className="container mx-auto mb-20 grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
           {repos.map((repo, idx) => (
             <Card key={repo.owner + repo.repo} className="flex flex-col items-center p-6 shadow rounded-xl bg-white">
-              <Typography as="h6" className="mb-2 text-lg font-medium text-blue-gray-600">
-                {repo.owner}/{repo.repo}
-              </Typography>
+              <div className="flex items-center gap-2 mb-2">
+                <Typography as="h6" className="text-lg font-medium text-blue-gray-600">
+                  {repo.owner}/{repo.repo}
+                </Typography>
+                <a
+                  href={`https://github.com/${repo.owner}/${repo.repo}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                  title="View Repository"
+                >
+                  <ExternalLink className="w-4 h-4 inline" />
+                </a>
+              </div>
               <ResponsiveContainer width={250} height={250}>
                 <PieChart>
                   <Pie
@@ -154,10 +163,21 @@ export default function OpenContribution() {
                 className="py-6 px-6 border border-blue-gray-100 rounded-xl hover:shadow-lg transition-shadow duration-200"
               >
                 <CardBody>
-                  <Typography as="h5" color="blue-gray" className="mb-4 text-2xl font-semibold flex items-center">
-                    <span className="mr-2">📦</span>
-                    {repos[idx]?.owner}/{repos[idx]?.repo}
-                  </Typography>
+                  <div className="flex items-center gap-2 mb-4">
+                    <Typography as="h5" color="blue-gray" className="text-2xl font-semibold flex items-center">
+                      <span className="mr-2">📦</span>
+                      {repos[idx]?.owner}/{repos[idx]?.repo}
+                    </Typography>
+                    <a
+                      href={`https://github.com/${repos[idx]?.owner}/${repos[idx]?.repo}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                      title="View Repository"
+                    >
+                      <ExternalLink className="w-4 h-4 inline" />
+                    </a>
+                  </div>
                   {"error" in response && response.error ? (
                     <Typography as="p" className="text-red-500">
                       Error: {response.error}
