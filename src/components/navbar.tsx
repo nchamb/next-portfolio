@@ -23,7 +23,7 @@ const NAV_MENU = [
   {
     name: "Home",
     icon: RectangleStackIcon,
-    href: "/",
+    href: "/#",
   },
   {
     name: "About Me",
@@ -114,10 +114,10 @@ export function Navbar() {
             </NavItem>
           ))}
         </ul>
-        <div className="hidden items-center gap-2 lg:flex">
-          <a href="#contact" target="_self">
+        <div className="hidden items-center gap-2 lg:flex"> 
+          <Link href="/#contact">
             <Button color="gray">Contact Me</Button>
-          </a>
+          </Link>
         </div>
         <IconButton
           variant="text"
@@ -143,9 +143,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <a href="#contact" target="_self">
+            <Link href="/#contact" target="_self">
               <Button color="gray" onClick={handleOpen}>Contact Me</Button>
-            </a>
+            </Link>
           </div>
         </div>
       </Collapse>

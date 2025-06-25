@@ -16,11 +16,11 @@ export default function BlogNavbar() {
                 <Link href="/#about-me" className="text-sm sm:text-base text-slate-700 hover:text-blue-600 transition-colors font-medium">
                     About Me
                 </Link>
-                <a href="/#contact" target="_self">
+                <Link href="/#contact" target="_self">
                     <button className="bg-black text-white px-3 py-1 sm:px-6 sm:py-2 rounded-lg font-medium text-sm sm:text-base transition-all hover:bg-blue-600 hover:shadow-lg">
                     Contact Me
                     </button>
-                </a>
+                </Link>
                 </div>
             </div>
             </div>
