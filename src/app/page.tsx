@@ -8,7 +8,7 @@ import Clients from "./clients";
 import Skills from "./skills";
 import Blogs from "./blogs";
 import Resume from "./resume";
-import Testimonial from "./testimonial";
+import OpenContribution from "./open-contribution";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
 import Experience from "./experience";
@@ -31,7 +31,7 @@ export default function Portfolio() {
       <Projects />
       <Blogs blogs={blogPosts} />
       <Resume />
-      {/* <Testimonial /> */}
+      <OpenContribution />
       {/* <PopularClients /> */}
       <ContactForm />
       <Footer />

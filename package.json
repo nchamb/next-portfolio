@@ -14,15 +14,17 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "2.0.18",
-    "@material-tailwind/react": "2.1.2",
+    "@material-tailwind/react": "^2.1.10",
     "@vercel/speed-insights": "^1.2.0",
     "disqus-react": "^1.1.6",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.511.0",
-    "next": "13.4.0",
+    "next": "13.4.19",
+    "octokit": "^5.0.3",
     "posthog-js": "^1.246.0",
     "react": "18",
     "react-dom": "18",
+    "recharts": "^3.0.0",
     "rss": "^1.2.2"
   },
   "devDependencies": {

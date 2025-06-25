@@ -23,38 +23,43 @@ const NAV_MENU = [
   {
     name: "Home",
     icon: RectangleStackIcon,
-    href: "#",
+    href: "/#",
   },
   {
     name: "About Me",
     icon: UserCircleIcon,
-    href: "#about-me",
+    href: "/#about-me",
   },
   {
     name: "Resume",
-    icon: BookmarkIcon,
-    href: "#resume",
+    icon: ArchiveBoxIcon, // Changed to ArchiveBoxIcon for Resume
+    href: "/#resume",
   },
   {
     name: "Skills",
     icon: Squares2X2Icon,
-    href: "#skills",
+    href: "/#skills",
   },
   {
     name: "Experience",
-    icon: ArchiveBoxIcon,
-    href: "#experience",
+    icon: RectangleStackIcon, // Changed to RectangleStackIcon for Experience
+    href: "/#experience",
   },
   {
     name: "Projects",
     icon: CommandLineIcon,
-    href: "#projects",
+    href: "/#projects",
   },
   {
     name: "My Blog",
-    icon: Square3Stack3DIcon,
-    href: "#blog",
-  }
+    icon: BookmarkIcon, // Changed to BookmarkIcon for Blog
+    href: "/#blog",
+  },
+  {
+    name: "Open Contribution",
+    icon: Square3Stack3DIcon, // Changed to Square3Stack3DIcon for Open Contribution
+    href: "/open-contribution",
+  },
 ];
 
 interface NavItemProps {
@@ -96,7 +101,9 @@ export function Navbar() {
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold">
+          <Link href="/" className="flex items-center gap-2">
           Nipun M. M.
+          </Link>
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
