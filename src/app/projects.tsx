@@ -1,4 +1,4 @@
-import { title } from 'process';
+import { ExternalLink } from "lucide-react";
 import React from 'react';
 
 const projects = [
@@ -45,22 +45,34 @@ const Projects = () => {
     <section id="projects" className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10">My Projects</h2>
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[500px_minmax(500px)] gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
               <a href={project.destination} target="_blank" rel="noreferrer">
-              <div className="relative group ">
-                <img src={project.imageUrl} alt={project.title} className="w-fit h-80 object-cover transition duration-300 transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                    <p className="font-mono subpixel-antialiased text-gray-200">{project.description}</p>
+                <div className="relative group ">
+                  <img src={project.imageUrl} alt={project.title} className="w-fit h-80 object-cover transition duration-300 transform group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                      <p className="font-mono subpixel-antialiased text-gray-200">{project.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
               </a>
             </div>
           ))}
+        </div>
+         <div className="flex justify-center mt-8">
+            <a
+              href="https://github.com/nipunbandara"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-black  text-white rounded-lg px-8 py-3 font-semibold shadow-sm transition hover:shadow-xl"
+            >
+              <ExternalLink className="w-5 h-5" />
+              See more projects on GitHub
+            </a>
         </div>
       </div>
     </section>

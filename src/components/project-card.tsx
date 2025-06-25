@@ -48,7 +48,7 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
           {readTime}
         </div>
 
-        <h2 className="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+        <h2 className="text-xl font-semibold mb-3 group-hover:text-blue-600 hover:text-black transition-colors line-clamp-2">
           <Link href={`/blogs/${slug}`}>
               {title}
           </Link>
@@ -65,12 +65,13 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
           ))}
           </div>
           
-          <Link href={`/blogs/${slug}`}
-          className="inline-flex items-center text-gray-600 hover:text-black font-medium group"
-          >
-          Read more
-          <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-        </Link>
+            <Link
+            href={`/blogs/${slug}`}
+            className="inline-flex items-center text-gray-600 hover:text-black font-medium group"
+            >
+            Continue reading
+            <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </Link>
       </CardBody>
     </Card>
   );

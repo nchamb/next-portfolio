@@ -119,7 +119,7 @@ const blogs = () => {
                         <Link href={`/blogs/${post.slug}`}
                         className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group"
                         >
-                        Read more 
+                        Continue reading
                         <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>

@@ -61,7 +61,7 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) =>  {
         <button
           onClick={() => router.push("/blogs")}
           type="button"
-          className="bg-black text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-gray-900"
+          className="inline-flex items-center gap-2 bg-black  text-white rounded-lg px-8 py-3 font-semibold shadow-sm transition hover:shadow-xl"
         >
           Load More Posts
         </button>
