@@ -54,7 +54,9 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
           </Link>
         </h2>
         <Typography className="mb-6 font-normal !text-gray-500">
-          {excerpt}
+          <p className="text-slate-600 mb-4 line-clamp-4">
+            {excerpt}
+          </p>
         </Typography>
           
         <div className="flex flex-wrap gap-2 mb-4">
@@ -63,15 +65,15 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
               {tag}
               </span>
           ))}
-          </div>
-          
-            <Link
-            href={`/blogs/${slug}`}
-            className="inline-flex items-center text-gray-600 hover:text-black font-medium group"
-            >
-            Continue reading
-            <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-            </Link>
+        </div>
+      
+        <Link
+        href={`/blogs/${slug}`}
+        className="inline-flex items-center text-gray-600 hover:text-black font-medium group"
+        >
+        Continue reading
+        <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </CardBody>
     </Card>
   );
