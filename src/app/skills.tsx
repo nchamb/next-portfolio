@@ -40,7 +40,7 @@ const SKILLS = [
     icon: EyeIcon,
     title: "AI",
     children:
-     "I have learned machine learning algorithms, including supervised and unsupervised models, and I am currently studying deep learning, neural networks, computer vision, and audio processing. I am proficient in Python and familiar with libraries such as TensorFlow, Keras, and scikit-learn. I am eager to apply this knowledge to real-world projects."
+     "I have learned machine learning algorithms, including supervised and unsupervised models, and I am currently studying deep learning, neural networks, computer vision, and audio processing. I am proficient in Python and familiar with libraries such as TensorFlow, PyTorch, and scikit-learn. I am eager to apply this knowledge to real-world projects."
   },
   {
     icon: DocumentTextIcon,
@@ -64,9 +64,7 @@ export function Skills() {
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
         >
-          I&apos;m not just a developer; I&apos;m a digital dreamweaver.
-          Crafting immersive online experiences is not just a job but my
-          calling. Discover below how I can help you.
+          I am currently in path of becoming an AI Engineer, and I have a strong foundation in web development, data science, and machine learning. I am passionate about building scalable and efficient applications that solve real-world problems. My skills include frontend and backend development, API design, database management, web optimization, and AI/ML.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">

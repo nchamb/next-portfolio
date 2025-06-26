@@ -15,14 +15,13 @@ function Hero() {
           >
             Welcome to my Portofolio!
           </Typography>
-          <Typography
+            <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
-          >
-            I&apos;m Nipun Bandara, a passionate web developer based in Australia. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
-          </Typography>
+            >
+            I&apos;m Nipun Bandara, a passionate Software Engineer based in Australia. Here,
+            you&apos;ll get a glimpse of my journey in the world of technology, where creativity meets functionality.
+            </Typography>
           {/* Social media connnect buttons */}
 
           <Typography
