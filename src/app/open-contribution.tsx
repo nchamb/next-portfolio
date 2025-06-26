@@ -13,6 +13,7 @@ import {
 } from "recharts";
 import { useRouter } from "next/navigation";
 import repos from "content/open-contribution_repos.json";
+import { ExternalLink } from "lucide-react";
 
 type Repo = { owner: string; repo: string };
 type Issue = {
@@ -123,9 +124,20 @@ export function OpenContribution() {
       <div className="container mx-auto mb-20 grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {repos.map((repo, idx) => (
           <Card key={repo.owner + repo.repo} className="flex flex-col items-center p-6 shadow rounded-xl bg-white">
-            <Typography as="h6" className="mb-2 text-lg font-medium text-blue-gray-600">
-              {repo.owner}/{repo.repo}
-            </Typography>
+           <div className="flex items-center gap-2 mb-2">
+              <Typography as="h6" className="text-lg font-medium text-blue-gray-600">
+                {repo.owner}/{repo.repo}
+              </Typography>
+              <a
+                href={`https://github.com/${repo.owner}/${repo.repo}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+                title="View Repository"
+              >
+                <ExternalLink className="w-4 h-4 inline" />
+              </a>
+            </div>
             <ResponsiveContainer width={250} height={250}>
               <PieChart>
                 <Pie
