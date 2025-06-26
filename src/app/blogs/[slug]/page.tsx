@@ -6,6 +6,9 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getPostBySlug } from '@/lib/blog';
 import DisqusComments from '@/components/disqus-comment';
+const { getAllPosts } = require('@/lib/blog');
+import Image from "next/image";
+
 
 type Props = {
   params: { slug: string };
@@ -61,7 +64,15 @@ export default function BlogPostPage({ params }: Props) {
           
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex-shrink-0"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex-shrink-0 overflow-hidden">
+                <Image
+                  src="/image/blog-pic.png"
+                  alt={post.author.name}
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover rounded-full"
+                />
+                </div>
               <div>
                 <p className="font-medium text-slate-900">{post.author.name}</p>
                 <p className="text-sm text-slate-600">{post.author.bio}</p>
@@ -83,21 +94,37 @@ export default function BlogPostPage({ params }: Props) {
 
         {/* Article Actions */}
         <div className="flex items-center justify-between border-y border-slate-200 py-4 mb-8">
+          <div />
           <div className="flex items-center space-x-4">
-            <button className="flex items-center space-x-2 text-slate-600 hover:text-red-600 transition-colors">
-              <Heart className="w-5 h-5" />
-              <span>42</span>
-            </button>
-            <button className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors">
-              <Bookmark className="w-5 h-5" />
-              <span>Save</span>
-            </button>
+            <a
+              className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+              href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Share2 className="w-5 h-5" />
+              <span>Twitter</span>
+            </a>
+            <a
+              className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Share2 className="w-5 h-5" />
+              <span>Facebook</span>
+            </a>
+            <a
+              className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}&title=${encodeURIComponent(post.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Share2 className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </a>
+           
           </div>
-          
-          <button className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors">
-            <Share2 className="w-5 h-5" />
-            <span>Share</span>
-          </button>
         </div>
 
         {/* Article Content */}
@@ -112,13 +139,33 @@ export default function BlogPostPage({ params }: Props) {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <h3 className="text-xl font-semibold mb-4">About the Author</h3>
           <div className="flex items-start space-x-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex-shrink-0"></div>
+             <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex-shrink-0 overflow-hidden">
+                <Image
+                  src="/image/blog-pic.png"
+                  alt={post.author.name}
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover rounded-full"
+                />
+                </div>
             <div>
               <h4 className="font-medium text-slate-900 mb-2">{post.author.name}</h4>
               <p className="text-slate-600 mb-4">{post.author.bio}</p>
               <div className="flex space-x-4">
-                <button className="text-blue-600 hover:text-blue-700 font-medium">Follow</button>
-                <button className="text-slate-600 hover:text-slate-700">View Profile</button>
+                <Link
+                  href="'https://nipunbandara.vercel.app/#about-me"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Follow
+                </Link>
+                <Link
+                  href={'https://nipunbandara.vercel.app/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-slate-700"
+                >
+                  View Portfolio
+                </Link>
               </div>
             </div>
           </div>
@@ -129,22 +176,46 @@ export default function BlogPostPage({ params }: Props) {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h3 className="text-xl font-semibold mb-6">Related Articles</h3>
           <div className="grid md:grid-cols-2 gap-6">
-            <Link href="/blogs" className="group">
-              <div className="h-32 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-4"></div>
-              <h4 className="font-medium group-hover:text-blue-600 transition-colors">
-                Example related article
+            {(() => {
+              // Import all posts and filter by shared tags, excluding current post
+              const allPosts = getAllPosts();
+              const relatedPosts = allPosts
+          .filter((p: any) =>
+            p.slug !== post.slug &&
+            p.tags.some((tag: string) => post.tags.includes(tag))
+          )
+          .slice(0, 4); // Limit to 4 related posts
+
+              return relatedPosts.length > 0 ? (
+          relatedPosts.map((related: any) => (
+            <Link
+              href={`/blogs/${related.slug}`}
+              className="group max-w-xs w-full"
+              key={related.slug}
+            >
+              <div className="h-40 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden">
+                <Image
+            src={related.img}
+            alt={related.title}
+            width={320}
+            height={160}
+            className="h-full w-full object-cover"
+                />
+              </div>
+              <h4 className="font-medium group-hover:text-blue-600 transition-colors mt-2">
+                {related.title}
               </h4>
-              <p className="text-sm text-slate-600 mt-2">6 min read</p>
+              <p className="text-sm text-slate-600 mt-1">{related.readTime}</p>
             </Link>
-            {/* <Link href="/blog/3" className="group">
-              <div className="h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mb-4"></div>
-              <h4 className="font-medium group-hover:text-blue-600 transition-colors">
-                Optimizing Web Performance with Modern Tools
-              </h4>
-              <p className="text-sm text-slate-600 mt-2">10 min read</p>
-            </Link> */}
+          ))
+              ) : (
+          <p className="text-slate-500">No related articles found.</p>
+              );
+            })()}
           </div>
         </div>
+
+
         <DisqusComments post={post} />
       </article>
      

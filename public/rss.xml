@@ -4,10 +4,22 @@
         <description><![CDATA[A collection of my findings, thoughts, and experiences in the world of software development.]]></description>
         <link>http://nipunbandara.vercel.app/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Jun 2025 23:36:52 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Jun 2025 08:10:17 GMT</lastBuildDate>
         <atom:link href="http://nipunbandara.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 25 Jun 2025 23:36:52 GMT</pubDate>
+        <pubDate>Thu, 26 Jun 2025 08:10:17 GMT</pubDate>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Add Pull Requests, Issues to Your Portfolio]]></title>
+            <description><![CDATA[Learn how to showcase your GitHub contributions effectively by adding pull requests and issues to your portfolio, enhancing your visibility and credibility in the developer community.]]></description>
+            <link>http://nipunbandara.vercel.app/blogs/GitHub_PR_API</link>
+            <guid isPermaLink="false">http://nipunbandara.vercel.app/blogs/GitHub_PR_API</guid>
+            <category><![CDATA[GitHub]]></category>
+            <category><![CDATA[Portfolio]]></category>
+            <category><![CDATA[REST]]></category>
+            <category><![CDATA[API]]></category>
+            <dc:creator><![CDATA[Nipun Bandara]]></dc:creator>
+            <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[KYC-Free Identity Verification with Blockchain and AI Agents]]></title>
             <description><![CDATA[Discover how to create a decentralized, privacy-preserving identity system using facial movement, voice verification, and smart contracts.]]></description>
