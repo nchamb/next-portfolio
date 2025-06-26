@@ -12,6 +12,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import { Octokit } from "@octokit/core";
+import Repos from "content/open-contribution_repos.json";
 
 type Repo = { owner: string; repo: string };
 type Issue = {
@@ -23,6 +25,8 @@ type Issue = {
   created_at: string;
   user: { login: string };
   pull_request?: any;
+  merged_at?: string;
+  closed_at?: string;
 };
 
 const COLORS = ["#a21caf", "#3b82f6"];
@@ -55,6 +59,62 @@ const getStateChip = (state: string) => (
     variant="outlined"
   />
 );
+
+const mergeStateChip = (issue: Issue) => {
+  if (issue.pull_request && issue.merged_at) {
+    return (
+      <Chip
+        value="Merged"
+        color="green"
+        size="sm"
+        className="ml-2"
+        variant="gradient"
+      />
+    );
+  } else if (issue.pull_request && issue.closed_at) {
+    return (
+      <Chip
+        value="Closed"
+        color="red"
+        size="sm"
+        className="ml-2 bg-red-600 text-white"
+        variant="outlined"
+      />
+    );
+  }
+  return null;
+}
+
+ const fetchOpenContributionData = async () => {
+      try {
+        const octokit = new Octokit({
+          auth: process.env.githubToken,
+        });
+
+        const results = await Promise.all(
+          Repos.map(async ({ owner, repo }) => {
+            try {
+              return await octokit.request("GET /repos/{owner}/{repo}/issues", {
+                owner,
+                repo,
+                state: "all",
+                per_page: 100,
+                headers: {
+                  "X-GitHub-Api-Version": "2022-11-28",
+                },
+              });
+            } catch (repoErr: any) {
+              return { data: [], error: repoErr?.message || "Unknown error" };
+            }
+          })
+        );
+        return results;
+      } catch (err: any) {
+        console.error("Failed to fetch issues:", err);
+        return [{ data: [], error: err?.message || "Failed to fetch issues." }];
+      }
+    };
+
 export default function OpenContribution() {
 
   const [repos, setRepos] = useState<Repo[]>([]);
@@ -67,6 +127,15 @@ export default function OpenContribution() {
       const parsed = JSON.parse(data);
       setRepos(parsed.repos || []);
       setResponses(parsed.responses || []);
+    }
+    else {
+      // fetch data from GitHub API
+      fetchOpenContributionData().then((results) => {
+        setResponses(results);
+        setRepos(Repos);
+        // Store data in sessionStorage
+        sessionStorage.setItem("openContributionData", JSON.stringify({ repos: Repos, responses: results }));
+      });
     }
   }, []);
 
@@ -209,6 +278,7 @@ export default function OpenContribution() {
                               <div className="flex items-center mt-1 space-x-2">
                                 {getTypeChip(issue)}
                                 {getStateChip(issue.state)}
+                                {mergeStateChip(issue)}
                                 <Typography as="span" className="text-gray-500 text-sm ml-2">
                                   {new Date(issue.created_at).toLocaleDateString()}
                                 </Typography>

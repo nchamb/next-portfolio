@@ -36,7 +36,7 @@ export function OpenContribution() {
   const router = useRouter();
 
   useEffect(() => {
-    const fetchIssues = async () => {
+    const fetchPullRequests = async () => {
       try {
         const octokit = new Octokit({
           auth: process.env.githubToken,
@@ -60,6 +60,12 @@ export function OpenContribution() {
           })
         );
         setResponses(results);
+        // Save data to sessionStorage as JSON string
+        sessionStorage.setItem("openContributionData", JSON.stringify({
+          repos,
+          responses: results,
+        }));
+        
       } catch (err: any) {
         setError(err?.message || "Failed to fetch issues.");
       } finally {
@@ -67,7 +73,15 @@ export function OpenContribution() {
       }
     };
 
-    fetchIssues();
+    // Fetch pull requests when component mounts
+    const data = sessionStorage.getItem("openContributionData");
+    if (data) {
+      const parsedData = JSON.parse(data);
+      setResponses(parsedData.responses);
+    }
+    else {
+      fetchPullRequests();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -89,13 +103,6 @@ export function OpenContribution() {
 
   // Button click handler to redirect and pass data via sessionStorage
   const handleViewDetails = () => {
-    if (responses.length > 0) {
-      // Save data to sessionStorage as JSON string
-      sessionStorage.setItem("openContributionData", JSON.stringify({
-        repos,
-        responses,
-      }));
-    }
     router.push("/open-contribution");
   };
 
