@@ -26,7 +26,7 @@ type Issue = {
   pull_request?: any;
 };
 
-const COLORS = ["#a21caf", "#3b82f6"];
+const COLORS = ["#E0406E", "#40B2E0"];
 
 export function OpenContribution() {
   const [responses, setResponses] = useState<{ data: Issue[] }[]>([]);

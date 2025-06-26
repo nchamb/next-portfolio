@@ -25,11 +25,9 @@ type Issue = {
   created_at: string;
   user: { login: string };
   pull_request?: any;
-  merged_at?: string;
-  closed_at?: string;
 };
 
-const COLORS = ["#a21caf", "#3b82f6"];
+const COLORS = ["#E0406E", "#40B2E0"];
 
 const getTypeChip = (issue: Issue) =>
   issue.pull_request ? (
@@ -43,41 +41,58 @@ const getTypeChip = (issue: Issue) =>
   ) : (
     <Chip
       value="Issue"
-      color="purple"
+      color="red"
       size="sm"
       className="ml-2"
       variant="gradient"
     />
   );
 
-const getStateChip = (state: string) => (
-  <Chip
-    value={state.charAt(0).toUpperCase() + state.slice(1)}
-    color={state === "open" ? "green" : "red"}
-    size="sm"
-    className="ml-2"
-    variant="outlined"
-  />
-);
+const getStateChip = (state: string) => {
+  if (state == "open") {
+    return (
+      <Chip
+        value={state.charAt(0).toUpperCase() + state.slice(1)}
+        color="green"
+        size="sm"
+        className="ml-2 bg-green-600 text-white"
+        variant="outlined"
+      />
+    );
+  }
+  return null;
+}
 
 const mergeStateChip = (issue: Issue) => {
-  if (issue.pull_request && issue.merged_at) {
+  console.log(issue);
+  if (issue.pull_request && issue.pull_request.merged_at) {
     return (
       <Chip
         value="Merged"
-        color="green"
+        color="purple"
         size="sm"
         className="ml-2"
         variant="gradient"
       />
     );
-  } else if (issue.pull_request && issue.closed_at) {
+  } else if (issue.pull_request && issue.state === "closed") {
     return (
       <Chip
         value="Closed"
         color="red"
         size="sm"
         className="ml-2 bg-red-600 text-white"
+        variant="outlined"
+      />
+    );
+  }
+  else if (!issue.pull_request && issue.state === "closed") {
+    return (
+      <Chip
+        value="Closed"
+        color="purple"
+        size="sm"
+        className="ml-2 bg-purple-600 text-white"
         variant="outlined"
       />
     );
