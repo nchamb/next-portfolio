@@ -20,7 +20,7 @@ function generateRssFeed() {
   const feed = new RSS({
     title: "Nipun's Blog",
     description: 'A collection of my findings, thoughts, and experiences in the world of software development.',
-    site_url: 'http://nipunbandara.vercel.app/',
+    site_url: 'http://nipunbandara.vercel.app/blogs',
     feed_url: 'http://nipunbandara.vercel.app/rss.xml',
     pubDate: new Date(),
     language: 'en',
