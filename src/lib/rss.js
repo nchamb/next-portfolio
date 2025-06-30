@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const postsDirectory = path.join(process.cwd(), 'content/blogs');
+const mime = require('mime-types');
 
 function getAllPosts() {
   const fileNames = fs.readdirSync(postsDirectory);
@@ -28,12 +29,20 @@ function generateRssFeed() {
   const posts = getAllPosts();
 
   posts.forEach(post => {
+    if (post.img) {
+      imageUrl = post.img
+      mimeType = mime.lookup(imageUrl);
+    }
     feed.item({
       title: post.title,
       guid: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
       url: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
       date: post.date,
       description: post.excerpt,
+      enclosure: post.img ? {
+        url: post.img,
+        type: mimeType,
+      } : undefined,
       categories: post.tags || [],
       author: post.author.name || 'Nipun Bandara',
     });

@@ -4,9 +4,9 @@
         <description><![CDATA[A collection of my findings, thoughts, and experiences in the world of software development.]]></description>
         <link>http://nipunbandara.vercel.app/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Jun 2025 08:10:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Jun 2025 02:23:28 GMT</lastBuildDate>
         <atom:link href="http://nipunbandara.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 26 Jun 2025 08:10:17 GMT</pubDate>
+        <pubDate>Mon, 30 Jun 2025 02:23:28 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Add Pull Requests, Issues to Your Portfolio]]></title>
@@ -19,6 +19,7 @@
             <category><![CDATA[API]]></category>
             <dc:creator><![CDATA[Nipun Bandara]]></dc:creator>
             <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
+            <enclosure url="/image/blogs/github-pr.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[KYC-Free Identity Verification with Blockchain and AI Agents]]></title>
@@ -31,6 +32,7 @@
             <category><![CDATA[Web3]]></category>
             <dc:creator><![CDATA[Nipun Bandara]]></dc:creator>
             <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+            <enclosure url="/image/blogs/kyc-blockchain.jpg" length="0" type="image/jpeg"/>
         </item>
     </channel>
 </rss>
