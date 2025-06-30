@@ -1,3 +1,3 @@
 References 👏
 
-Built using Creative Tim's Template (https://www.creative-tim.com/)
+Special thanks to Creative Tim for base structure (https://www.creative-tim.com/)
