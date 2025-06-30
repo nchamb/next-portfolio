@@ -40,7 +40,7 @@ function generateRssFeed() {
       date: post.date,
       description: post.excerpt,
       enclosure: post.img ? {
-        url: post.img,
+        url: 'http://nipunbandara.vercel.app' + post.img,
         type: mimeType,
       } : undefined,
       categories: post.tags || [],
