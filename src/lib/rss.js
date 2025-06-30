@@ -27,13 +27,13 @@ function generateRssFeed() {
   });
 
   const posts = getAllPosts();
-
   posts.forEach(post => {
+    let imageUrl, mimeType;
     if (post.img) {
-      imageUrl = post.img
+      imageUrl = post.img;
       mimeType = mime.lookup(imageUrl);
     }
-    feed.item({
+    const itemOptions = {
       title: post.title,
       guid: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
       url: `http://nipunbandara.vercel.app/blogs/${post.slug}`,
@@ -44,12 +44,31 @@ function generateRssFeed() {
         type: mimeType,
       } : undefined,
       categories: post.tags || [],
-      author: post.author.name || 'Nipun Bandara',
-    });
+      author: post.author?.name || 'Nipun Bandara',
+      custom_elements: []
+    };
+
+    if (post.img) {
+      itemOptions.custom_elements.push({
+        'media:content': {
+          _attr: {
+            url: 'http://nipunbandara.vercel.app' + post.img,
+            type: mimeType
+          }
+        }
+      });
+    }
+
+    feed.item(itemOptions);
   });
 
   const rssPath = path.join(process.cwd(), 'public', 'rss.xml');
-  fs.writeFileSync(rssPath, feed.xml({ indent: true }));
+  let xml = feed.xml({ indent: true });
+  xml = xml.replace(
+    /<rss([^>]*)>/,
+    `<rss$1 xmlns:media="http://search.yahoo.com/mrss/">`
+  );
+  fs.writeFileSync(rssPath, xml);
 }
 
 module.exports = { generateRssFeed };
