@@ -153,7 +153,7 @@ export default function BlogPostPage({ params }: Props) {
               <p className="text-slate-600 mb-4">{post.author.bio}</p>
               <div className="flex space-x-4">
                 <Link
-                  href="'https://chamb.vercel.app/#about-me"
+                  href="https://chamb.vercel.app/#about-me"
                   className="text-blue-600 hover:text-blue-700 font-medium"
                 >
                   Follow
