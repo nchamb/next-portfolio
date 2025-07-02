@@ -15,22 +15,22 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Cham's Portfolio",
   description: "I'm a software engineer with a passion for building beautiful and functional web applications and exploring the world of data science.",
-  metadataBase: new URL('http://nipunbandara.vercel.app/'),
+  metadataBase: new URL('http://chamb.vercel.app/'),
   alternates: {
     canonical: '/',
     types: {
-      'application/rss+xml': 'http://nipunbandara.vercel.app/rss.xml',
+      'application/rss+xml': 'http://chamb.vercel.app/rss.xml',
     },
   },
   keywords: ['Blog', 'Data Science', 'Cham Bandara', 'Portfolio', 'Full Stack Developer', 'Software Engineer', 'AI Engineer', 'Machine Learning', 'Web Development'],
   openGraph: {
     title: "Cham's Portfolio | Cham's Blog",
     description: "I'm a software engineer with a passion for building beautiful and functional web applications and exploring the world of data science.",
-    url: 'http://nipunbandara.vercel.app/',
+    url: 'http://chamb.vercel.app/',
     siteName: "Cham Bandara's Portfolio",
     images: [
       {
-        url: 'http://nipunbandara.vercel.app/image/mypic.png',
+        url: 'http://chamb.vercel.app/image/mypic.png',
         width: 1200,
         height: 630,
         alt: "Cham's Portfolio",

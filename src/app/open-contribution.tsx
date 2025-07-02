@@ -94,7 +94,7 @@ export function OpenContribution() {
       { name: "Pull Requests", value: 0 },
     ];
     const myIssues = response.data.filter(
-      (issue: Issue) => issue.user.login === "nipunbandara"
+      (issue: Issue) => issue.user.login === "nchamb"
     );
     return [
       { name: "Issues", value: myIssues.filter((issue) => !issue.pull_request).length },

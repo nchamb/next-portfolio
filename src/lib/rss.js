@@ -20,8 +20,8 @@ function generateRssFeed() {
   const feed = new RSS({
     title: "Cham's Blog",
     description: 'A collection of my findings, thoughts, and experiences in the world of software development.',
-    site_url: 'https://nipunbandara.vercel.app/blogs',
-    feed_url: 'https://nipunbandara.vercel.app/rss.xml',
+    site_url: 'https://chamb.vercel.app/blogs',
+    feed_url: 'https://chamb.vercel.app/rss.xml',
     pubDate: new Date(),
     language: 'en',
   });
@@ -35,12 +35,12 @@ function generateRssFeed() {
     }
     const itemOptions = {
       title: post.title,
-      guid: `https://nipunbandara.vercel.app/blogs/${post.slug}`,
-      url: `https://nipunbandara.vercel.app/blogs/${post.slug}`,
+      guid: `https://chamb.vercel.app/blogs/${post.slug}`,
+      url: `https://chamb.vercel.app/blogs/${post.slug}`,
       date: post.date,
       description: post.excerpt,
       enclosure: post.img ? {
-        url: 'https://nipunbandara.vercel.app' + post.img,
+        url: 'https://chamb.vercel.app' + post.img,
         type: mimeType,
       } : undefined,
       categories: post.tags || [],
@@ -52,7 +52,7 @@ function generateRssFeed() {
       itemOptions.custom_elements.push({
         'media:content': {
           _attr: {
-            url: 'https://nipunbandara.vercel.app' + post.img,
+            url: 'https://chamb.vercel.app' + post.img,
             type: mimeType
           }
         }

@@ -8,4 +8,4 @@ Disallow: /static/
 Disallow: /server/
 Disallow: /private/
 
-Sitemap: https://nipunbandara.vercel.app/sitemap.xml
+Sitemap: https://chamb.vercel.app/sitemap.xml

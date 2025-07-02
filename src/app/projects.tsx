@@ -30,13 +30,13 @@ const projects = [
     title: 'Global Adventures',
     description: 'Global Adventures is a travel agency website that provides information about various travel packages, destinations, and services offered by the agency.',
     imageUrl: '/image/projects/global-adventure.png',
-    destination: 'https://nipunbandara.github.io/Global-Adventures/',
+    destination: 'https://nchamb.github.io/Global-Adventures/',
   },
   {
     title: 'Garden Indian Restaurant',
     description: 'Garden Indian Restaurant is a restaurant website that provides information about the restaurant, its menu, and services offered. Users can view the menu, make reservations, and place orders online. Additonally, users can see privious orders and refill same order with one click.',
     imageUrl: '/image/projects/garden-indian-restourant.png',
-    destination: 'https://nipunbandara.github.io/Garden-Indian-Restaurant/',
+    destination: 'https://nchamb.github.io/Garden-Indian-Restaurant/',
   }
 ];
 
@@ -65,7 +65,7 @@ const Projects = () => {
         </div>
          <div className="flex justify-center mt-16">
             <a
-              href="https://github.com/nipunbandara"
+              href="https://github.com/nchamb"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-black  text-white rounded-lg px-8 py-3 font-semibold shadow-sm transition hover:shadow-xl"

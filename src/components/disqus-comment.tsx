@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 const DisqusComments = ({ post }) => {
   const disqusShortname = "http-nipunbandara-vercel-app"
   const disqusConfig = {
-    url: `https://nipunbandara.vercel.app/blogs/${post.slug}`,
+    url: `https://chamb.vercel.app/blogs/${post.slug}`,
     identifier: post.slug,
     title: post.title,
     language: 'en_US'

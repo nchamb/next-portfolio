@@ -79,7 +79,7 @@ app.add_middleware(
 
 <h2>Source Code</h2>
 <p>You can explore the full source code and try it yourself via GitHub:</p>
-<p><a href="https://github.com/nipunbandara/Identity-Verifier.git" target="_blank">🔗 github.com/nipunbandara/Identity-Verifier</a></p>
+<p><a href="https://github.com/nchamb/Identity-Verifier.git" target="_blank">🔗 github.com/nchamb/Identity-Verifier</a></p>
 
 <h2>Conclusion</h2>
 <p>This KYC-Free identity system proves how AI and blockchain can work together to replace centralized verification. You preserve privacy while offering strong proof of personhood—ideal for Web3 platforms, DAOs, and more.</p>

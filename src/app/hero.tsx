@@ -32,7 +32,7 @@ function Hero() {
           </Typography>
           <div className="mb-4 p-2 flex gap-5">
             <a
-              href="https://www.linkedin.com/in/nipun-bandara/"
+              href="https://www.linkedin.com/in/cham-bandara/"
               target="_blank"
               rel="noreferrer"
             >
@@ -44,7 +44,7 @@ function Hero() {
               />
             </a>
             <a
-              href="https://github.com/nipunbandara"
+              href="https://github.com/nchamb"
               target="_blank"
               rel="noreferrer"
             >

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const metadata = {
   alternates: {
-    canonical: 'https://nipunbandara.vercel.app/blogs',
+    canonical: 'https://chamb.vercel.app/blogs',
   },
 };
 

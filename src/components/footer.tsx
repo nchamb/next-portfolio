@@ -12,7 +12,7 @@ export function Footer() {
             &copy; Cham Bandara M. M. {CURRENT_YEAR} · <a href="/rss/" className="hover:text-blue-500 hover:underline">RSS</a>
             <br />
             <a
-              href="https://www.linkedin.com/in/nipun-bandara"
+              href="https://www.linkedin.com/in/cham-bandara"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center hover:text-blue-500 hover:underline"
@@ -31,7 +31,7 @@ export function Footer() {
             </a>
             &nbsp;|&nbsp;
             <a
-              href="https://github.com/nipunbandara"
+              href="https://github.com/chamb"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center hover:text-blue-500 hover:underline"

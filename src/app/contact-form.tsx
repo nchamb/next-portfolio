@@ -84,7 +84,7 @@ export function ContactForm() {
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  nipun.bandara@outlook.com
+                  cham.bandara@outlook.com
                 </Typography>
               </div>
               <div className="flex gap-5">

@@ -102,7 +102,7 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold">
           <Link href="/" className="flex items-center gap-2">
-          Nipun M. M.
+          Cham Bandara
           </Link>
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">

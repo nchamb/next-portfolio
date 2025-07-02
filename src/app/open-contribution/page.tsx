@@ -162,7 +162,7 @@ export default function OpenContribution() {
       { name: "Pull Requests", value: 0 },
     ];
     const myIssues = response.data.filter(
-      (issue: Issue) => issue.user.login === "nipunbandara"
+      (issue: Issue) => issue.user.login === "nchamb"
     );
     return [
       { name: "Issues", value: myIssues.filter((issue) => !issue.pull_request).length },
@@ -274,7 +274,7 @@ export default function OpenContribution() {
                     <ul className="space-y-4">
                       {response.data
                         .filter(
-                          (issue: Issue) => issue.user.login === "nipunbandara"
+                          (issue: Issue) => issue.user.login === "nchamb"
                         )
                         .map((issue: Issue) => (
                           <li

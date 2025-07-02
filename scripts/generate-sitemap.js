@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://nipunbandara.vercel.app';
+const BASE_URL = 'https://chamb.vercel.app';
 
 // List your static routes with priorities
 const staticPages = [

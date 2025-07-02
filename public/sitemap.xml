@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://nipunbandara.vercel.app/</loc>
+    <loc>https://chamb.vercel.app/</loc>
     <lastmod>2025-07-02</lastmod>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://nipunbandara.vercel.app/blogs</loc>
+    <loc>https://chamb.vercel.app/blogs</loc>
     <lastmod>2025-07-02</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://nipunbandara.vercel.app/open-contribution</loc>
+    <loc>https://chamb.vercel.app/open-contribution</loc>
     <lastmod>2025-07-02</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://nipunbandara.vercel.app/blogs/GitHub_PR_API</loc>
+    <loc>https://chamb.vercel.app/blogs/GitHub_PR_API</loc>
     <lastmod>2025-07-02</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://nipunbandara.vercel.app/blogs/KYC-Free_Identity_Verification</loc>
+    <loc>https://chamb.vercel.app/blogs/KYC-Free_Identity_Verification</loc>
     <lastmod>2025-07-02</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>

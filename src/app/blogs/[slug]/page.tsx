@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.slug, // or another appropriate property
     description: post.content, // or another appropriate property
     alternates: {
-      canonical: `https://nipunbandara.vercel.app/blogs/${params.slug}`,
+      canonical: `https://chamb.vercel.app/blogs/${params.slug}`,
     },
   };
 }
@@ -98,7 +98,7 @@ export default function BlogPostPage({ params }: Props) {
           <div className="flex items-center space-x-4">
             <a
               className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
+              href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://chamb.vercel.app/blogs/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -107,7 +107,7 @@ export default function BlogPostPage({ params }: Props) {
             </a>
             <a
               className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://chamb.vercel.app/blogs/${post.slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +116,7 @@ export default function BlogPostPage({ params }: Props) {
             </a>
             <a
               className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(`https://nipunbandara.vercel.app/blogs/${post.slug}`)}&title=${encodeURIComponent(post.title)}`}
+              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(`https://chamb.vercel.app/blogs/${post.slug}`)}&title=${encodeURIComponent(post.title)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -153,13 +153,13 @@ export default function BlogPostPage({ params }: Props) {
               <p className="text-slate-600 mb-4">{post.author.bio}</p>
               <div className="flex space-x-4">
                 <Link
-                  href="'https://nipunbandara.vercel.app/#about-me"
+                  href="'https://chamb.vercel.app/#about-me"
                   className="text-blue-600 hover:text-blue-700 font-medium"
                 >
                   Follow
                 </Link>
                 <Link
-                  href={'https://nipunbandara.vercel.app/'}
+                  href={'https://chamb.vercel.app/'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-slate-700"
