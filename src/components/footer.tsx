@@ -31,7 +31,7 @@ export function Footer() {
             </a>
             &nbsp;|&nbsp;
             <a
-              href="https://github.com/chamb"
+              href="https://github.com/nchamb"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center hover:text-blue-500 hover:underline"
