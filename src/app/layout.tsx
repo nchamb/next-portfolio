@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Nipun's Portfolio",
+  title: "Cham's Portfolio",
   description: "I'm a software engineer with a passion for building beautiful and functional web applications and exploring the world of data science.",
   metadataBase: new URL('http://nipunbandara.vercel.app/'),
   alternates: {
@@ -22,18 +22,18 @@ export const metadata: Metadata = {
       'application/rss+xml': 'http://nipunbandara.vercel.app/rss.xml',
     },
   },
-  keywords: ['Blog', 'Data Science', 'Nipun Bandara', 'Portfolio', 'Full Stack Developer', 'Software Engineer', 'AI Engineer', 'Machine Learning', 'Web Development'],
+  keywords: ['Blog', 'Data Science', 'Cham Bandara', 'Portfolio', 'Full Stack Developer', 'Software Engineer', 'AI Engineer', 'Machine Learning', 'Web Development'],
   openGraph: {
-    title: "Nipun's Portfolio | Nipun's Blog",
+    title: "Cham's Portfolio | Cham's Blog",
     description: "I'm a software engineer with a passion for building beautiful and functional web applications and exploring the world of data science.",
     url: 'http://nipunbandara.vercel.app/',
-    siteName: "Nipun's Portfolio",
+    siteName: "Cham Bandara's Portfolio",
     images: [
       {
         url: 'http://nipunbandara.vercel.app/image/mypic.png',
         width: 1200,
         height: 630,
-        alt: "Nipun's Portfolio",
+        alt: "Cham's Portfolio",
       },
     ],
     locale: 'en_US',

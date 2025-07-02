@@ -18,7 +18,7 @@ function getAllPosts() {
 
 function generateRssFeed() {
   const feed = new RSS({
-    title: "Nipun's Blog",
+    title: "Cham's Blog",
     description: 'A collection of my findings, thoughts, and experiences in the world of software development.',
     site_url: 'https://nipunbandara.vercel.app/blogs',
     feed_url: 'https://nipunbandara.vercel.app/rss.xml',
@@ -44,7 +44,7 @@ function generateRssFeed() {
         type: mimeType,
       } : undefined,
       categories: post.tags || [],
-      author: post.author?.name || 'Nipun Bandara',
+      author: post.author?.name || 'Cham Bandara',
       custom_elements: []
     };
 

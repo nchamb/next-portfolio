@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-center">
           <Typography className="w-full text-center font-normal !text-gray-700 text-s">
-            &copy; Nipun Bandara M. M. {CURRENT_YEAR} · <a href="/rss/" className="hover:text-blue-500 hover:underline">RSS</a>
+            &copy; Cham Bandara M. M. {CURRENT_YEAR} · <a href="/rss/" className="hover:text-blue-500 hover:underline">RSS</a>
             <br />
             <a
               href="https://www.linkedin.com/in/nipun-bandara"

@@ -7,7 +7,7 @@ date: "2025-05-28"
 readTime: "9 min read"
 tags: ["Blockchain", "AI", "Identity", "Web3"]
 featured: true
-author: {name: "Nipun Bandara", avatar: "", bio: "Tech enthusiast building future-proof AI + Web3 solutions."}
+author: {name: "Cham Bandara", avatar: "", bio: "Tech enthusiast building future-proof AI + Web3 solutions."}
 ---
 
 <p>Traditional Know Your Customer (KYC) processes are invasive, slow, and centralized. But what if users could prove their humanness and identity using biometrics without handing over sensitive documents? In this blog, we'll build a <strong>KYC-Free Identity Verification System</strong> using AI agents and blockchain smart contracts.</p>

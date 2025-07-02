@@ -2,7 +2,7 @@
   "name": "nextjs-tailwind-portfolio-page",
   "version": "1.0.0",
   "private": true,
-  "author": "Nipun M M",
+  "author": "Cham Bandara",
   "scripts": {
     "dev": "next dev",
     "build": "next build && npm run generate-rss && npm run generate-sitemap",

@@ -7,7 +7,7 @@ date: "2025-06-26"
 readTime: "12 min read"
 tags: ["GitHub", "Portfolio", "REST", "API"]
 featured: true
-author: {name: "Nipun Bandara", avatar: "", bio: "Tech enthusiast building future-proof AI + Web3 solutions."}
+author: {name: "Cham Bandara", avatar: "", bio: "Tech enthusiast building future-proof AI + Web3 solutions."}
 ---
 
 <style>
