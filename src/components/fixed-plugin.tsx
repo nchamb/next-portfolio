@@ -4,7 +4,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 export function FixedPlugin() {
   return (
-    <a href="/CV - Nipun Maha Mudiyanselage (SE).pdf" download>
+    <a href="/CV - Cham Bandara.pdf" download>
       <Button
         color="white"
         size="sm"
