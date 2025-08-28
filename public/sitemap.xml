@@ -3,21 +3,21 @@
 
   <url>
     <loc>https://chamb.vercel.app/</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-08-28</lastmod>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://chamb.vercel.app/blogs</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-08-28</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://chamb.vercel.app/open-contribution</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-08-28</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
