@@ -28,16 +28,6 @@ const nextConfig = {
       destination: '/sitemap.xml',
       permanent: true,
       },
-      {
-      source: '/blogs/sitemap',
-      destination: '/sitemap.xml',
-      permanent: true,
-      },
-      {
-      source: '/blogs/sitemap.xml',
-      destination: '/sitemap.xml',
-      permanent: true,
-      },
     ];
   },
 };
