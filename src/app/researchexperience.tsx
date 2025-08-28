@@ -2,12 +2,17 @@ import React from 'react';
 
 const ResearchExperience: React.FC = () => {
     return (
-        <div className="container mx-auto p-4">
-             <h1 className="text-2xl font-semibold mb-4">My Research/Data Science Experience</h1>
-            <div className="bg-white shadow-md rounded-md p-6 mb-4">
-                <h2 className="text-md font-semibold mb-2">Depth of Anesthesia (DoA) Index Design</h2>
-                <p className="text-gray-600">CSC6003 Machine Learning | University of Southern Queensland</p>
-                <p className="text-gray-600">Nov 2024</p>
+        <section id="research" className="py-16">
+            <div className="container mx-auto px-4">
+                <h2 className="text-3xl font-bold text-center mb-10">Research & Data Science Experience</h2>
+            <div className="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition-shadow duration-300">
+                <div className="mb-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Depth of Anesthesia (DoA) Index Design</h3>
+                    <p className="text-blue-600 font-semibold">CSC6003 Machine Learning | University of Southern Queensland</p>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mt-2">
+                        Nov 2024
+                    </span>
+                </div>
                 <div className="text-gray-700 mt-2 space-y-3 text-sm">
                     <p>I developed a novel Depth of Anesthesia (DoA) index using EEG-derived features to enhance intraoperative patient monitoring in clinical settings. The model was designed to produce BIS-like index values ranging from 0 (deep anesthesia) to 100 (awake).</p>
                     <p>The project involved rigorous feature selection and model validation using Pearson correlation, R², and Bland-Altman plots to ensure robustness on withheld test data. Supervised machine learning techniques including Linear Regression and Random Forest were employed to model the index from EEG features (x1–x7).</p>
@@ -86,10 +91,14 @@ const ResearchExperience: React.FC = () => {
                 </div>
             </div>
     
-            <div className="bg-white shadow-md rounded-md p-6 mb-4">
-                <h2 className="text-md font-semibold mb-2">Deep Learning for Chest X-ray Classification</h2>
-                <p className="text-gray-600">Multi-label Medical Image Analysis</p>
-                <p className="text-gray-600">June 2025</p>
+            <div className="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition-shadow duration-300">
+                <div className="mb-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Deep Learning for Chest X-ray Classification</h3>
+                    <p className="text-blue-600 font-semibold">CSC6203 - Intelligent Multimedia (Computer Vision, Audio) Analysis | University of Southern Queensland</p>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 mt-2">
+                        June 2025
+                    </span>
+                </div>
                 <div className="text-gray-700 mt-2 space-y-3 text-sm">
                     <p>Developed and trained deep learning models (DenseNet-121 & custom CNN) for multi-label classification of chest X-ray images using over 100,000 samples for comprehensive medical image analysis.</p>
                     <p>Implemented a custom 4-block CNN architecture with SE attention mechanisms, batch normalization, and channel recalibration, specifically optimized for extracting radiology features from medical imaging data.</p>
@@ -112,10 +121,14 @@ const ResearchExperience: React.FC = () => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-md p-6 mb-4">
-                <h2 className="text-md font-semibold mb-2">Environmental Sound Classification with Deep Learning</h2>
-                <p className="text-gray-600">Audio Signal Processing & Deep Learning</p>
-                <p className="text-gray-600">Aug 2025</p>
+            <div className="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition-shadow duration-300">
+                <div className="mb-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Environmental Sound Classification with Deep Learning</h3>
+                    <p className="text-blue-600 font-semibold">CSC6203 - Intelligent Multimedia (Computer Vision, Audio) Analysis | University of Southern Queensland</p>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mt-2">
+                        Aug 2025
+                    </span>
+                </div>
                 <div className="text-gray-700 mt-2 space-y-3 text-sm">
                     <p>Developed and optimized deep learning models (CNN, LSTM-RNN, CAR-Transformer) for Environmental Sound Classification (ESC) using the UrbanSound8K dataset, achieving high accuracy in noisy, real-world audio environments.</p>
                     <p>Extracted and engineered audio features (MFCC-40, log-Mel spectrograms, Δ & Δ² features) to enhance temporal and spectral representation for classification tasks.</p>
@@ -140,8 +153,9 @@ const ResearchExperience: React.FC = () => {
                         </a>
                     </div>
                 </div>
-    
             </div>
-        );
+        </section>
+    );
 }
+
 export default ResearchExperience;
