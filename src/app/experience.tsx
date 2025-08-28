@@ -31,7 +31,7 @@ const ProjectsSectionLarge = () => {
           <TimelineBody className="pb-8">
             <div className="text-base font-bold font-caveat text-gray-600">CorsDeck Pvt Ltd</div>
 
-            <Typography variant="small" color="gary" className="font-normal text-gray-600">
+            <Typography variant="small" color="gray" className="font-normal text-gray-600">
               Collaborated with product managers and stakeholders to gather requirements and to prioritize project development.<br/>
               Implemented authentication and authorization mechanisms using JWT tokens and OAuth2.<br/>
               Implemented caching strategies using React Quarry and Redux.<br/>
@@ -58,7 +58,7 @@ const ProjectsSectionLarge = () => {
           <TimelineBody className="pb-8">
             <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
-            <Typography variant="small" color="gary" className="font-normal text-gray-600">
+            <Typography variant="small" color="gray" className="font-normal text-gray-600">
               Installed and configured generator control modules and ECUs, ensuring seamless integration with existing systems.<br/>
               Specialized in supporting and maintaining ComAp, Deep Sea Electronics, SmartGen modules and CAT and Perkins ECUs.<br/>
               Provided comprehensive software system support, addressing and resolving technical issues promptly.<br/>
@@ -186,7 +186,7 @@ const Experience = () => {
     //       <TimelineBody className="pb-8">
     //         <div className="text-base font-bold font-caveat text-gray-600">CorsDeck Pvt Ltd</div>
 
-    //         <Typography variant="small" color="gary" className="font-normal text-gray-600">
+    //         <Typography variant="small" color="gray" className="font-normal text-gray-600">
     //           Collaborated with product managers and stakeholders to gather requirements and to prioritize project development.<br/>
     //           Implemented authentication and authorization mechanisms using JWT tokens and OAuth2.<br/>
     //           Implemented caching strategies using React Quarry and Redux.<br/>
@@ -213,7 +213,7 @@ const Experience = () => {
     //       <TimelineBody className="pb-8">
     //         <div className="text-base font-bold font-caveat text-gray-600">Sunil Electricals</div>
 
-    //         <Typography variant="small" color="gary" className="font-normal text-gray-600">
+    //         <Typography variant="small" color="gray" className="font-normal text-gray-600">
     //     
     //         </Typography>
     //       </TimelineBody>
