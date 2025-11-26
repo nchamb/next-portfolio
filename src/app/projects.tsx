@@ -3,6 +3,13 @@ import React from 'react';
 
 const projects = [
   {
+    title: 'HEART Learning Management System',
+    description: 'A full-stack application designed for managing online courses, video content, student enrollments, progress tracking, and multi-tenant organizations with secure authentication.',
+    imageUrl: '/image/projects/lms.png',
+    techStack: 'Next.js 16, React 19, TypeScript, Prisma ORM, MySQL, Clerk Auth, Mux Video, Stripe, UploadThing, Tailwind CSS',
+    // destination: 'https://your-lms-url.com',
+  },
+  {
     title: 'Titans User',
     description: 'Ticketing System for Titans Organization to sell tickets for their events. Users can purchase tickets and get QR Code for Entry and Exit of the Event.',
     imageUrl: '/image/projects/titans.png',
