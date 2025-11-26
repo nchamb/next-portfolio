@@ -5,7 +5,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Typography,
   Button,
 } from "@material-tailwind/react";
 
@@ -53,11 +52,9 @@ export function ProjectCard({ slug, img, id, title, excerpt, date, readTime, tag
               {title}
           </Link>
         </h2>
-        <Typography className="mb-6 font-normal !text-gray-500">
-          <p className="text-slate-600 mb-4 line-clamp-4">
-            {excerpt}
-          </p>
-        </Typography>
+        <p className="text-slate-600 mb-4 line-clamp-4">
+          {excerpt}
+        </p>
           
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag) => (

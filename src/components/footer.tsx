@@ -1,5 +1,3 @@
-import { Typography, Button } from "@material-tailwind/react";
-
 const LINKS = ["Home", "About Us", "Blog", "Service"];
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -8,9 +6,9 @@ export function Footer() {
     <footer className="mt-10 px-8">
       <div className="container mx-auto">
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-center">
-          <Typography className="w-full text-center font-normal !text-gray-700 text-s">
-            &copy; Cham Bandara M. M. {CURRENT_YEAR} · <a href="/rss/" className="hover:text-blue-500 hover:underline">RSS</a>
-            <br />
+          <div className="w-full text-center font-normal text-gray-700 text-sm">
+            <p>&copy; Cham Bandara M. M. {CURRENT_YEAR} · <a href="/rss/" className="hover:text-blue-500 hover:underline">RSS</a></p>
+            <p className="mt-1">
             <a
               href="https://www.linkedin.com/in/cham-bandara"
               target="_blank"
@@ -48,8 +46,8 @@ export function Footer() {
               </svg>
               GitHub
             </a>
-           
-          </Typography>
+           </p>
+          </div>
         </div>
       </div>
     </footer>
