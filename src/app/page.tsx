@@ -15,6 +15,7 @@ import Experience from "./experience";
 import Education from "./education";
 import ResearchExperience from "./researchexperience";
 import Projects from "./projects";
+import Documents from "./documents";
 
 const blogPosts = getAllPosts();
 
@@ -30,6 +31,7 @@ export default function Portfolio() {
       <ResearchExperience />
       <Projects />
       <Blogs blogs={blogPosts} />
+      <Documents />
       <Resume />
       <OpenContribution />
       {/* <PopularClients /> */}
