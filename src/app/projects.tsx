@@ -85,7 +85,16 @@ const Projects = () => {
               </a>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold text-gray-900 mb-1 tracking-tight">
-                  {project.title}
+                  {(project.destination || project.github) ? (
+                    <a
+                      href={project.destination || project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-600 transition-colors"
+                    >
+                      {project.title}
+                    </a>
+                  ) : project.title}
                 </h3>
                 {project.badge && (
                   <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 mb-2">
