@@ -182,6 +182,7 @@ const ResearchExperience: React.FC = () => {
                     </a>
                 </div>
             </div>
+            </div>
         </section>
     );
 }
