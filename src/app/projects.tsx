@@ -89,7 +89,7 @@ const Projects = () => {
                 </h3>
                 {project.badge && (
                   <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 mb-2">
-                    🏆 {project.badge}
+                    {project.badge}
                   </span>
                 )}
                 <div className="w-10 h-1 bg-blue-200 rounded-full mb-3" />
